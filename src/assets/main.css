@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#app {
+        width: 100%;
+        height: 8134px;
+        top: -1858px;
+        left: -6002px;
+        gap: 100px;
+        opacity: 0px;
+        background: #1C1C1E;
+}
+
