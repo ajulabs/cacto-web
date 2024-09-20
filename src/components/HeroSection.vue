@@ -1,132 +1,115 @@
 <script setup>
+import BtnSejaMember from './Buttons/BtnSejaMember.vue';
+
 </script>
 
 
 <template>
-    <section class="hero-section"> 
-        <div class="content-container"> 
-            <div class="content-block"> 
-                <div class="text-contente"> 
-                    <h1>SEUS RESULTADOS, NOSSO COMPROMISSO!</h1>
-                    <p>Na <img class="logoText" src="@/assets/cacto_logo.svg" alt="Logo"/> você descobre o prazer de exercitar.<br>
-                    Venha transformar os seus objetivos de boa forma e saúde em realidade.</p>
-                </div>
-                <button class="cta-button">SEJA MEMBRO</button>
+    <main>
+        <div class="container">
+            <div class="imgOne">
+                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/people-dumbbells 1.png" alt="">
             </div>
-            <img class="fotoFundo" src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/people-dumbbells 1.png" alt="Logo"/>
+            <div class="main-txt">
+                <h1>SEUS RESULTADOS, NOSSO COMPROMISSO!</h1>
+                <h2>Na <img class="icon-logo" src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/cacto_logo.svg" alt=""> você descobre o prazer se exercitar. <br>Venha transformar os seus objetivos de boa forma e saúde em realidade.</h2>
+                <BtnSejaMember/>
+            </div>
         </div>
-    </section>
+    </main>
 </template>
 
 <style scoped>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        max-width: 100vw;
+        overflow: hidden;
+    }
 
-.hero-section {
-    position: relative;
-    width: 1440px;
-    height: 980px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    top: 0px;
-    gap: 8px;
-    opacity: 0px;
-    overflow: hidden;
-}
+    .imgOne {
+        position: relative;
+        max-height: 100vh;
+    }
 
-.content-container {
-    position: relative;
-    width: 1440px;
-    height: 980px;
-    opacity: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 2;
-}
+    .imgOne img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-.fotoFundo{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
+    .main-txt {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        color: #FFFFFF;
+    }
 
-.content-block {
-    width: 1238px;
-    height: 208px;
-    max-width: 1238px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0px;
-    margin-top: 27%;
-    z-index: 2;
-}
+    h1, h2 {
+        margin: 0;
+        font-family: 'Poppins',sans-serif;
+    }
 
-.text-contente {
-    position: relative;
-    font-family: 'Poppins', sans-serif;
-    width: 1038px;
-    height: 138px;
-    opacity: 0px;
-}
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 3.6rem;
+        text-align: left;
+    }
 
-.text-contente h1 {
-    position: relative;
-    width: 1038px;
-    height: 58px;
-    opacity: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    color: #FFFFFF;
-    margin-bottom: 4px;
-}
+    h2 {
+        font-family: Poppins;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 2.25rem;
+        padding-bottom: 0.5rem;
+    }
 
-.text-contente p {
-    width: 1034px;
-    height: 72px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    text-align: center;
-    color: #FFFFFF;
-}
+    .icon-logo {
+        vertical-align: middle;
+        padding: 0.3rem;
+        height: 2.1rem;
+        width: auto;
+    }
 
-.cta-button {
-    position: relative;
-    width: 520px;
-    height: 54px;
-    background-color: #FF6400;
-    color: #FFFFFF;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 22.5px;
-    padding: 16px 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    /* Smartphones pequenos */
+    @media(max-width:575px){
+        .imgOne {
+            max-height: 100vh;
+        }
 
-.cta-button:hover {
-    background-color: #e55a00;
-}
+        .imgOne img {
+            height: auto;
+        }
 
-.logoText {
-    width: 81px;
-    vertical-align: middle;
-}
+        .main-txt {
+            width: 100vw;
+            bottom: 0.2rem;
+            transform: translate(-50%);
+        }
+
+        .icon-logo {
+            padding: 0;
+            height: 0.5rem;
+        }
+
+        h1 {
+            font-size: 0.7rem;
+            line-height: 0.6rem;
+            text-align: center;
+            padding: 0px 0px 3px 0px;
+        }
+
+        h2 {
+            font-size: 0.45rem;
+            padding: 0;
+            line-height: 0.7rem;
+        }
+    }
 </style> 
