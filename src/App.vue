@@ -10,16 +10,13 @@ import HeroSectionTwo from './components/HeroSectionTwo.vue';
     <div class="mainLayout">
         <Header class="header"/>
         <HeroSection/>
-        <!-- <HeroSectionTwo/> -->
+        <HeroSectionTwo/>
     </div>
 </template>
 
 <style scoped>
     .header {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
         z-index: 1000;
     }
 </style>

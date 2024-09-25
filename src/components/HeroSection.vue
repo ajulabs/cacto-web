@@ -26,8 +26,7 @@ import BtnSejaMember from './Buttons/BtnSejaMember.vue';
         display: flex;
         justify-content: center;
         align-items:center;
-        max-width: 100vw;
-        overflow: hidden;
+        width: 100%;
     }
 
     .imgOne {
