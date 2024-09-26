@@ -1,5 +1,5 @@
 <script setup>
-import BtnSejaMember from './Buttons/BtnSejaMember.vue';
+import BtnSejaMember from './BtnSejaMember.vue';
 
 </script>
 
