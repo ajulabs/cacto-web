@@ -1,4 +1,6 @@
 <script setup>
+import Line from './Line.vue';
+
 const props = defineProps({
     title: {
         type: String,
@@ -14,6 +16,7 @@ const props = defineProps({
 <template>
     <div class="text-image-layout">
         <h2>{{ title }}</h2>
+        <Line/>
         <p>{{ description }}</p>
     </div>
 </template>
@@ -43,8 +46,11 @@ const props = defineProps({
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 4rem;
     width: 4px;
     background-color: #ff6600;
+}
+.text-image-layout p {
+    margin-top: 1rem;
 }
 </style>
