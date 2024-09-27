@@ -8,14 +8,14 @@ import Line from './Line.vue';
     <div class="footer-container">
         <div class="footer-content">
             <CardA/>
-            <CardA/>
+            <!-- <CardA/> -->
         </div>
         <Line/>
         <div class="container-sobre">
             <div class="content-sobre">
                 <div class="local-content">
                     <div class="contacto-local">
-                        <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/cacto_logo.svg" alt="">
+                        <img src="/src/assets/cacto_logo.svg" alt="">
                     </div>
                     <div class="contacto-local">
                         <h2> CACTO ALAMENDA </h2>
@@ -44,13 +44,13 @@ import Line from './Line.vue';
                                 <h2> João Silva </h2>
                             </div>
                             <div class="item-list">
-                                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/Next slide.svg" alt="">
+                                <img src="/src/assets/Next slide.svg" alt="">
                             </div>
                         </div>
                         <Line/>
                         <div class="itens-footer">
                             <div class="contacto-fone">
-                                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/fone.svg" alt="">
+                                <img src="/src/assets/fone.svg" alt="">
                             </div>
                             <div class="item-list">
                                 <h3> Telefone </h3>
@@ -60,7 +60,7 @@ import Line from './Line.vue';
                         <Line/>
                         <div class="itens-footer">
                             <div class="contacto-emai">
-                                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/emai.svg" alt="">
+                                <img src="/src/assets/emai.svg" alt="">
                             </div>
                             <div class="item-list">
                                 <h3> Email: </h3>

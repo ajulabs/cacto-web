@@ -19,7 +19,7 @@ import Footer from './Footer.vue';
                 </div>
             </div>
             <div class="media-container">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/Property.png" alt="">
+                <img src="/src/assets/Property.png" alt="">
             </div>
         </div>
 
@@ -59,10 +59,10 @@ import Footer from './Footer.vue';
                     <div class="feature-content">
                         <div class="gradient-overlay"></div>
                         <div class="image-block">
-                            <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/image 6.png" alt="">
+                            <img src="/src/assets/image 6.png" alt="">
                         </div>
                         <div class="feature-card">
-                            <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/Icon - chat.svg" alt="">
+                            <img src="/src/assets/Icon - chat.svg" alt="">
                             <h2>APRENDA COM OS MELHORES</h2>
                         </div>
                     </div>
@@ -86,12 +86,12 @@ import Footer from './Footer.vue';
                     <div class="feature-content">
                         <div class="gradient-overlay-B"></div>
                         <div class="image-block-B">
-                            <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/image 5.png" alt="">
+                            <img src="/src/assets/image 5.png" alt="">
                         </div>
                         <div class="feature-card-B">
-                            <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/icon-fot.png" alt="">
+                            <img src="/src/assets/icon-fot.png" alt="">
                             <div class="cardVector-B">
-                                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/Vector 431.svg" alt="">
+                                <img src="/src/assets/Vector 431.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -101,7 +101,7 @@ import Footer from './Footer.vue';
 
         <div class="hero-content">
             <div class="media-container">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/TWO.png" alt="">
+                <img src="/src/assets/TWO.png" alt="">
             </div>
             <div class="text-container">
                 <div class="text-content">
@@ -123,7 +123,7 @@ import Footer from './Footer.vue';
                 </div>
             </div>
             <div class="media-container">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/ONE.png" alt="">
+                <img src="/src/assets/ONE.png" alt="">
             </div>
         </div>
 
@@ -133,18 +133,18 @@ import Footer from './Footer.vue';
             </div>
             <div class="five-txt-top">
                 <span class="iconIMG">
-                    <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/Line.svg" alt="">
+                    <img src="/src/assets/Line.svg" alt="">
                 </span>
                 <p>sit amet, consectetur adipiscing elit, Sed Do Eiusmosit amet, Consectetur <br> adipiscing Elit, Sed Do Eiusmod Sit Amet, Consectetur Adipiscing Elit, Sed Do 
                     <br>Eiusmod D </p>
             </div>
             <span>
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/five-IMG.png" alt="">
+                <img src="/src/assets/five-IMG.png" alt="">
             </span>
         </div>
 
         <div class="Hero-element-six">
-            <img class="background-image" src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/image-5.png" alt="">
+            <img class="background-image" src="/src/assets/image-5.png" alt="">
             <div class="content-six-txt">
                 <h1>LOREL LORE</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error deserunt aliquid, aliquam molestiae laudantium? Alias nihil quae magni magnam corrupti suscipit fuga porro modi laudantium explicabo, excepturi, deleniti vel.</p>

@@ -21,15 +21,15 @@ const props = defineProps({
         </div>
         <div class="check-list"> 
             <div class="itens">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/check-square.svg" alt="">
+                <img src="/src/assets/check-square.svg" alt="">
                 <h2>AVALIAÇÕES PERIÓDICAS</h2>
             </div>
             <div class="itens">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/check-square.svg" alt="">
+                <img src="/src/assets/check-square.svg" alt="">
                 <h2>MONITORAMENTO DE PROGRESSO</h2>
             </div>
             <div class="itens">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/check-square.svg" alt="">
+                <img src="/src/assets/check-square.svg" alt="">
                 <h2>SOCIAL FITNESS</h2>
             </div>
         </div>
