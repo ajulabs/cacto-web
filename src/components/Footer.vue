@@ -8,7 +8,6 @@ import Line from './Line.vue';
     <div class="footer-container">
         <div class="footer-content">
             <CardA/>
-            <!-- <CardA/> -->
         </div>
         <Line/>
         <div class="container-sobre">
@@ -19,16 +18,16 @@ import Line from './Line.vue';
                     </div>
                     <div class="contacto-local">
                         <h2> CACTO ALAMENDA </h2>
-                        <H3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </H3>
+                        <h3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </h3>
                     </div>
                     <div class="contacto-local">
                         <h2> CACTO 13 DE JULHO </h2>
-                        <H3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </H3>
+                        <h3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </h3>
                     </div>
                     <Line/>
                     <div class="contacto-local">
                         <h2> CACTO 13 DE JULHO </h2>
-                        <H3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </H3>
+                        <h3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </h3>
                     </div>
                     <Line/>
                 </div>
