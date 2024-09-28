@@ -5,7 +5,7 @@
     <div class="text-content">
         <button class="join-button">SEJA MEMBRO 
             <span>
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/Icon.svg" alt="">
+                <img src="/src/assets/Icon.svg" alt="">
             </span>
         </button>
     </div>

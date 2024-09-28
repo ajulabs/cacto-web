@@ -3,27 +3,55 @@ import Button from './Button.vue';
 </script>
 
 <template>
-    <div class="card-container">
-        <div class="card-content">
-            <div 
-                class="BG">
+    <div class="Card-wrapper">
+        <div class="card-container">
+            <div class="card-content">
+                <div 
+                    class="BG">
+                </div>
+                <div class="title">
+                    <h1>Texto</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum <br> dolor sit amet, consectetur </p>
+                </div>
             </div>
-            <div class="title">
-                <h1>Texto</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum <br> dolor sit amet, consectetur </p>
+            <div class="BTN-Footer">
+                <Button
+                buttonIcon="/src/assets/Aparelo-Tele.svg"
+                separator="|"
+                buttonLabel=" Fale conosco"
+            />
             </div>
         </div>
-        <div class="BTN-Footer">
-            <Button
-            buttonIcon="./src/assets/Aparelo-Tele.svg"
-            separator="|"
-            buttonLabel=" Fale conosco"
-        />
+
+        <div class="card-container">
+            <div class="card-content">
+                <div 
+                    class="BG">
+                </div>
+                <div class="title">
+                    <h1>Texto</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum <br> dolor sit amet, consectetur </p>
+                </div>
+            </div>
+            <div class="BTN-Footer">
+                <Button
+                buttonIcon="/src/assets/IconHome.svg"
+                separator="|"
+                buttonLabel=" Nossos planos "
+            />
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.Card-wrapper {
+    width: 89rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .card-container {
     width: 33.75rem;
     height: 10.938rem;
@@ -57,7 +85,6 @@ import Button from './Button.vue';
     border-radius: 0.625rem;
 }
 .BTN-Footer {
-    position: absolute;
     z-index: 2;
     margin-left: 8rem;
     margin-top: .5rem;

@@ -8,11 +8,11 @@ import BtnSejaMember from './BtnSejaMember.vue';
     <main>
         <div class="container">
             <div class="imgOne">
-                <img src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/people-dumbbells 1.png" alt="">
+                <img src="/src/assets/people-dumbbells 1.png" alt="">
             </div>
             <div class="main-txt">
                 <h1>SEUS RESULTADOS, NOSSO COMPROMISSO!</h1>
-                <h2>Na <img class="icon-logo" src="/Users/cekeaudio/Desktop/AjuLabs/Projeto-Cacto/src/assets/cacto_logo.svg" alt=""> você descobre o prazer se exercitar. <br>Venha transformar os seus objetivos de boa forma e saúde em realidade.</h2>
+                <h2>Na <img class="icon-logo" src="/src/assets/cacto_logo.svg" alt=""> você descobre o prazer se exercitar. <br>Venha transformar os seus objetivos de boa forma e saúde em realidade.</h2>
                 <BtnSejaMember/>
             </div>
         </div>
