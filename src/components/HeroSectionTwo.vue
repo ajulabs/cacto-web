@@ -2,7 +2,6 @@
 import BtnSejaMemberTwo from './BtnSejaMemberTwo.vue';
 import ChekList from './Chek-List.vue';
 import TitleText from './textImageLayout.vue';
-import Footer from './Footer.vue';
 
 </script>
 
@@ -152,10 +151,6 @@ import Footer from './Footer.vue';
             <span class="span-BTN-ELSIX">
                 <BtnSejaMemberTwo/>
             </span>
-        </div>
-
-        <div class="Hero-element-eigth">
-            <Footer/>
         </div>
     </section>
 </template>

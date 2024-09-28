@@ -3,6 +3,7 @@ import {ref } from 'vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { RouterLink } from 'vue-router';
 
 library.add(faBars);
 
@@ -24,11 +25,11 @@ const handleMenuClick = () => {
                         <img src="@/assets/cacto_logo.svg" alt="Logo"/>
                     </div>
                     <ul :class="{'ul': true, 'ul-open': isMenuopen }">
-                        <li class="Home"><a href="#">Início</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Benefícios</a></li>
-                        <li><a href="#">Atendimento Especializado</a></li>
-                        <li><a href="#">Planos</a></li>
+                        <li class="Home"><router-link to="/">Início</router-link></li>
+                        <li><router-link to="/Produtos">Produtos</router-link></li>
+                        <li><router-link to="/Beneficios">Benefícios</router-link></li>
+                        <li><router-link to="/AtendimentoEspecializado">Atendimento Especializado</router-link></li>
+                        <li><router-link to="/Planos">Planos</router-link></li>
                     </ul>
                     <div class="menu-ic" @click="handleMenuClick">
                         <font-awesome-icon icon="bars" size="2x" />
