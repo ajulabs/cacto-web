@@ -1,7 +1,7 @@
 <script setup>
 import BtnSejaMemberTwo from './BtnSejaMemberTwo.vue';
 import ChekList from './Chek-List.vue';
-import TitleText from './textImageLayout.vue';
+import TitleText from './TitleText.vue';
 
 </script>
 
