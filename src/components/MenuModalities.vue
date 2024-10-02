@@ -9,10 +9,10 @@
                 <h1> MODALIDADES </h1>
             </div>
             <div class="itens">
-                <h2> CACTO EXCLUSIVE </h2>
-                <h2> CACTO MMT </h2>
-                <h2> CACTO RUN </h2>
-                <h2> BEACH TENIS </h2>
+                <li> <h2> CACTO EXCLUSIVE </h2> </li>
+                <li> <h2> CACTO MMT </h2> </li>
+                <li> <h2> CACTO RUN </h2> </li>
+                <li> <h2> BEACH TENIS </h2> </li>
             </div>
         </div>
     </div>
