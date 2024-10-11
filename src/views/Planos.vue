@@ -1,5 +1,6 @@
 <script setup>
 import CardPlanos from '@/components/CardPlanos.vue';
+import LineDIv from '@/components/Line.vue';
 import { ref } from 'vue';
 
 const selectedCard =ref(null);
@@ -166,13 +167,15 @@ const selectCard = (cardId) => {
     width: 90rem;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 2.5rem;
 }
 
 .checkbox-container {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
+    padding-right: 5.2rem;
     margin: 0.5rem; 
 }
 

@@ -1,6 +1,7 @@
 <script setup>
+import LineDIv from './Line.vue';
 import Line from './Line.vue';
-
+import LineVertical from './LineVertical.vue';
 
 const props=defineProps ({
     tipo: {
@@ -29,10 +30,10 @@ const props=defineProps ({
             <h2>{{ tipo }}</h2>
             <h1> {{ valor }}</h1>
             <p>{{ text }}</p>
-            <div>
-                <Line/>
+            <div class="LinDiv">
+                <LineDIv/>
             </div>
-            <slot></slot>
+            <slot class="slots"></slot>
             <div class="btn">
                 <button  
                     :class="{selected: isSelected }">
@@ -82,12 +83,15 @@ const props=defineProps ({
     color: #A0A3AA;
 }
 
-.line {
-    width: 100%;
-    height: 0.96px;
-    border: solid 1px #FFFFFF; 
-    margin: 1rem 0; 
+.LinDiv {
+    border: 0;
+    height: 1px;
+    width: 96%;
+    background-color: #FFFFFF;
+    margin: .7rem;
+    opacity: 40%;
 }
+
 
 .btn button {
     width: 11.379rem;
