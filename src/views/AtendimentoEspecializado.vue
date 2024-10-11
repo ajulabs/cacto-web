@@ -19,6 +19,7 @@
                 <div class="left-top">
                     <div class="midiaPlay">
                         <span class="play-button"></span>
+                        <span class="selo"><h2>VOCÊ EM 1 LUGAR</h2></span>
                     </div>
                     <h4> LOREM IPSUM </h4>
                     <p>eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p>
@@ -48,6 +49,8 @@
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 .container{
     position: relative;
     z-index: 1;
@@ -155,6 +158,27 @@ p{
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     cursor: pointer;
+}
+.selo{
+    width: 6.25rem;
+    height: 6.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #FF6400;
+    left: 32rem;
+    top: 33rem;
+}
+.selo h2 {
+    color: #FFFFFF;
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.29rem;
+    line-height: 1.5rem;
+    word-break: break-word;
 }
 .play-buttonRigth {
     width: 6rem;
