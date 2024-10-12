@@ -1,9 +1,17 @@
 <script setup>
+import { useRouter } from 'vue-router';
+
+
+const router = useRouter();
+
+const navigateToPage = () => {
+    router.push('/Planos');
+}
 </script>
 
 <template>
     <div class="text-content">
-        <button class="join-button">SEJA MEMBRO 
+        <button @click="navigateToPage" class="join-button">SEJA MEMBRO 
             <span>
                 <img src="/src/assets/Icon.svg" alt="">
             </span>
