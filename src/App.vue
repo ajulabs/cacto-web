@@ -15,7 +15,7 @@ import { RouterView, RouterLink } from 'vue-router';
 <style scoped>
     .header {
         position: fixed;
-        z-index: 1;
+        z-index: 1000;
     }
 
 </style>
