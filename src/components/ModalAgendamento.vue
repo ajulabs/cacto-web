@@ -1,8 +1,7 @@
 <script setup>
-import { ref, defineEmits } from 'vue';
+import { ref, defineEmits, onBeforeMount, onBeforeUnmount } from 'vue';
 
-    const emit = defineEmits();
-
+const emit = defineEmits();
     const selectedModality = ref('');
     const selectedUnit = ref('');
     const isVisible = ref(true);
@@ -33,12 +32,12 @@ import { ref, defineEmits } from 'vue';
                 </div>
                 <div class="content-form">
                     <span class="list">
-                        <label for=""> Nome <span class="listUl"> * </span> </label>
-                        <input type="text" name="" id="" placeholder="informe seu nome aqui">
+                        <label for="nome"> Nome <span class="listUl"> * </span> </label>
+                        <input type="text" name="nome" id="nome" placeholder="informe seu nome aqui">
                     </span>
                     <span class="list">
-                        <label for=""> WhatsApp <span class="listUl"> * </span> </label>
-                        <input type="text" name="" id="" placeholder="(XX) XXXXX-XXXX">
+                        <label for="whatsapp"> WhatsApp <span class="listUl"> * </span> </label>
+                        <input type="tel" name="" id="whatsapp" placeholder="(XX) XXXXX-XXXX">
                     </span>
 
                     <span class="list">
@@ -71,95 +70,110 @@ import { ref, defineEmits } from 'vue';
 
 <style scoped>
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
+    width: 90rem;
+    height: 90rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    transform: translate(-25.4%, -60%);
+    z-index: 3000;
+    overflow: hidden;
 }
 .container {
-    width: 57.5rem;
-    max-height: 93.4vh;
-    border-radius: 10px;
+    position: fixed;
+    width: 55rem;
+    height: 35rem;
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 18px 0px #00000014;
+    border-radius: 20px;
     display: flex;
+    justify-content: space-evenly;
+    z-index: 3000;
+    animation: .3s anim-modal;
 }
-.container-form {
-    padding: 1.5rem;
+.content-img img {
+    width: 23.75rem;
+    height: 35rem;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 4px 18px 0px #00000014;
 }
-.content-form {
+.list {
     display: flex;
     flex-direction: column;
-    text-align: start;
-    padding: 1.5rem;
+    padding: 1rem 2.5rem 0 2.5rem;
 }
 .title {
     width: 28.75rem;
     display: flex;
     justify-content: space-between;
-    margin-left: 1.4rem;
 }
 .title h2 {
-    padding-top: 1.5rem;
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.8rem;
     color: #1c1c1e;
+    padding: 2rem 2rem 0 2.5rem;
 }
-.list {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 0 1rem 0;
+.closeX {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    border: none;
+    background: none;
+    color: #1c1c1e;
+    margin-right: .4rem;
+    cursor: pointer;
 }
 .listUl {
     color: #FF6400;
 }
 label {
-    padding-bottom: 1rem;
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 1.313rem;
     color: #1c1c1e;
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.313rem;
 }
-input, select {
-    width: 28.75rem;
-    height: 3.438rem;
-    border: solid 1px #E5E5EA;
+input, 
+select {
+    width: 26rem;
+    height: 3rem;
+    border: solid 1px #e5e5ea;
     border-radius: 10px;
-    padding: 1.2rem;
-}
-
-.btnConfirm {
     padding: 1rem;
-    border-radius: 10px;
-    border: none;
-    background: #FF6400;
-    color: #FFFFFF;
+    margin-top: .5rem;
+}
+.btnConfirm {
     font-family: 'Poppins';
     font-weight: 700;
     font-size: .9rem;
     line-height: 1.406rem;
     text-align: center;
-    margin-top: .4rem;
     cursor: pointer;
-}
-.closeX {
-    font-family: 'poppins', sans-serif;
-    color: #1c1c1e;
-    font-size: 1.2rem;
-    cursor: pointer;
+    color: #FFFFFF;
+    padding: .7rem;
+    margin: .8rem 2.5rem;
+    border-radius: 10px;
     border: none;
-    background: none;
+    background-color: #FF6400;
 }
-
-
+.content-form {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+@keyframes anim-modal {
+    from{
+        transform: translateY(100vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
 </style>
