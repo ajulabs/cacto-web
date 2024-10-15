@@ -1,5 +1,6 @@
 <script setup>
 import BtnSejaMemberTwo from '@/components/BtnSejaMemberTwo.vue';
+import CardModallities from '@/components/CardModallities.vue';
 import MenuModalities from '@/components/MenuModalities.vue';
 import TitleTextTwo from '@/components/TitleTextTwo.vue';
 
@@ -33,7 +34,34 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
         <div class="menu-container">
             <MenuModalities/>
             <div class="menu-content">
-
+                <CardModallities
+                    :CardOne="{
+                        title:'Cacto Exclusivo',
+                        description:'A combinação definitiva de força, resistência e flexibilidade para construir um corpo estético e saudável',
+                        iconSrc:'/src/assets/Icon.svg',
+                        imageSrc:'/src/assets/victorfreitas.png',
+                    }"
+                    :CardTwo="{
+                        title:' Cacto MMT',
+                        description:'A combinação definitiva de força, resistência e flexibilidade para construir um corpo estético e saudável',
+                        iconSrc:'/src/assets/Icon.svg',
+                        imageSrc: '/src/assets/leonardho.png',
+                    }"
+                />
+                <CardModallities
+                    :CardOne="{
+                        title:' Cacto RUN ',
+                        description:'sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+                        iconSrc:'/src/assets/Icon.svg',
+                        imageSrc:'/src/assets/ketut-subiyanto.png'
+                    }"
+                    :CardTwo="{
+                        title:' Beach Tênis ',
+                        description:'sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
+                        iconSrc: '/src/assets/Icon.svg',
+                        imageSrc:'/src/assets/image 76.png'
+                    }"
+                />
             </div>
         </div>
     </div>
