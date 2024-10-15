@@ -1,10 +1,20 @@
 <script setup>
+import { ref } from 'vue';
+import ModalAgendamento from './ModalAgendamento.vue';
+
+
+    const isVisible = ref(false);
+
+    const openModal = () => {
+        isVisible.value = true ;
+    }
 </script>
 
 
 <template>
     <div class="div_ctaBtn">
-        <button class="cta-button">SEJA MEMBRO</button>
+        <button class="cta-button" @click="openModal">SEJA MEMBRO</button>
+        <ModalAgendamento v-if="isVisible" @close="isVisible = false " />
     </div>
 </template>
 
@@ -23,7 +33,6 @@
     border-radius: 10px;
     padding: 16px 18px 16px 18px;
     gap: 10px;
-    opacity: 0px;
 }
 
 .div_ctaBtn button:hover {
