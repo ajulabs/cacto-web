@@ -12,7 +12,6 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
     <div class="Production-Section-main">
         <div class="Produc-Section">
             <div class="text-container">
-                    <h3>Lorem Ipsum Dolor</h3>
                 <div class="text-content">
                     <TitleTextTwo
                         title="Lorem Ipsun"
@@ -38,13 +37,13 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
                     :CardOne="{
                         title:'Cacto Exclusivo',
                         description:'A combinação definitiva de força, resistência e flexibilidade para construir um corpo estético e saudável',
-                        iconSrc:'/src/assets/Icon.svg',
+                        iconSrc:'/src/assets/Vector.svg',
                         imageSrc:'/src/assets/victorfreitas.png',
                     }"
                     :CardTwo="{
                         title:' Cacto MMT',
                         description:'A combinação definitiva de força, resistência e flexibilidade para construir um corpo estético e saudável',
-                        iconSrc:'/src/assets/Icon.svg',
+                        iconSrc:'/src/assets/Vector.svg',
                         imageSrc: '/src/assets/leonardho.png',
                     }"
                 />
@@ -52,13 +51,13 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
                     :CardOne="{
                         title:' Cacto RUN ',
                         description:'sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-                        iconSrc:'/src/assets/Icon.svg',
+                        iconSrc:'/src/assets/Vector.svg',
                         imageSrc:'/src/assets/ketut-subiyanto.png'
                     }"
                     :CardTwo="{
                         title:' Beach Tênis ',
                         description:'sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor',
-                        iconSrc: '/src/assets/Icon.svg',
+                        iconSrc: '/src/assets/Vector.svg',
                         imageSrc:'/src/assets/image 76.png'
                     }"
                 />
@@ -120,9 +119,6 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
     font-size: 1.2rem;
     line-height: 2.25rem;
     margin-bottom: .8rem;
-    color: #ff6400;
-}
-.menu-container {
-    
+    /* color: #ff6400; */
 }
 </style>

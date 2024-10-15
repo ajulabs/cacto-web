@@ -62,34 +62,28 @@ const props = defineProps({
     margin: 0 auto;
     margin-top: 6rem;
 }
-
 .cardModal-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-
 .img-Modal {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .txt-Modal {
     width: 29.17rem;
 }
-
 .lineVertical {
     padding-left: 4rem;
     padding-right: 4rem;
     display: flex;
     opacity: 7%;
 }
-
 .arrow-reverse img {
     transform: rotate(180deg);
 }
-
 .txt-Modal h1{
     font-family: 'Sofia sans';
     font-weight: 900;
@@ -98,7 +92,6 @@ const props = defineProps({
     margin-bottom: 1rem;
     color: #FFFFFF;
 }
-
 .txt-Modal p  {
     font-family: 'Poppins' sans-serif;
     font-weight: 400;
@@ -106,17 +99,12 @@ const props = defineProps({
     line-height: 2rem;
     color: #FFFFFF;
 }
-
 .txt-Modal img {
     width: 5.834rem;
     height: 3.2rem;
     border: none;
     cursor: pointer;
     margin-top: 3rem;
-    fill: #FF6400;
-    stroke: #FF6400;
-    background: #FF6400;
-
 }
 
 </style>
