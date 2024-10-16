@@ -37,6 +37,10 @@ const props = defineProps({
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
 .feature-title {
     margin-top: 4rem;
 }
@@ -44,7 +48,7 @@ const props = defineProps({
     word-wrap: break-word;
     margin-top: 1.5rem;
     line-height: 1.9rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', serif;
     font-weight: 400;
     font-size: 1rem;
     color: #A0A3AA;
@@ -52,7 +56,6 @@ const props = defineProps({
 .check-list {
     margin-top: 2rem;
 }
-
 .itens {
     display: flex;
     align-items: center;
@@ -62,7 +65,6 @@ const props = defineProps({
     gap: 0.932rem;
     color: #FFFFFF;
 }
-
 .feature-title h1 {
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
@@ -70,5 +72,11 @@ const props = defineProps({
     font-size: 2.684rem;
     line-height: 3.416rem;
 }
-
+.itens h2 {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 700;
+    font-size: 1.22rem;
+    line-height: 1.952rem;
+    color: #FFFFFF;
+}
 </style>
