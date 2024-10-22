@@ -22,6 +22,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap');
 .text-image-layout {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -30,17 +31,15 @@ const props = defineProps({
     line-height: 2rem;
     width: 39.438rem;
 }
-
 .text-image-layout h2 {
     position: relative;
     font-size: 3rem;
     font-weight: 600;
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: "Sofia Sans";
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
     line-height: 3rem;
 }
-
 .text-image-layout h2::before {
     content: "";
     position: absolute;

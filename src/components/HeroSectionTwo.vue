@@ -19,7 +19,7 @@ import TitleText from './TitleText.vue';
                 </div>
             </div>
             <div class="media-container">
-                <img src="/src/assets/Property.png" alt="">
+                <video src="/src/assets/video1.mp4" autoplay muted loop playsinline></video>
             </div>
         </div>
 
@@ -101,7 +101,7 @@ import TitleText from './TitleText.vue';
 
         <div class="hero-content">
             <div class="media-container">
-                <img src="/src/assets/TWO.png" alt="">
+                <video src="/src/assets/video2.mp4" autoplay muted loop playsinline></video>
             </div>
             <div class="text-container">
                 <div class="text-content">
@@ -123,7 +123,7 @@ import TitleText from './TitleText.vue';
                 </div>
             </div>
             <div class="media-container">
-                <img src="/src/assets/ONE.png" alt="">
+                <video src="/src/assets/video3.mp4" autoplay muted loop playsinline></video>
             </div>
         </div>
 
@@ -136,10 +136,10 @@ import TitleText from './TitleText.vue';
                     <img src="/src/assets/Line.svg" alt="">
                 </span>
                 <p>sit amet, consectetur adipiscing elit, Sed Do Eiusmosit amet, Consectetur <br> adipiscing Elit, Sed Do Eiusmod Sit Amet, Consectetur Adipiscing Elit, Sed Do 
-                    <br>Eiusmod D </p>
+                <br>Eiusmod D </p>
             </div>
-            <span>
-                <img src="/src/assets/five-IMG.png" alt="">
+            <span class="videoFHD">
+                <video src="/src/assets/video4.mp4" autoplay muted loop playsinline></video>
             </span>
         </div>
 
@@ -156,12 +156,10 @@ import TitleText from './TitleText.vue';
     </section>
 </template>
 
-
-
-
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Hero Section */
 .hero-section {
@@ -183,17 +181,25 @@ import TitleText from './TitleText.vue';
     flex-direction: column;
     text-align: center;
     max-width: 70rem;
-    margin-top: 2rem;
+    margin-top: 8rem;
     gap: 1.25rem;
     color: #FFFFFF;
     font-family: 'Poppins';
     padding: 0 0 60px 0;
     border-color: #3A3B3E;
 }
-.media-container img {
-    max-width: 100vw;
+.media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.media-container video {
+    width: 720px;
+    height: 902px;
     object-fit: cover;
-    max-height: 100vh;
+    margin-top: 10rem;
+    padding: 4rem 0 ;
 }
 .join-button {
     display: inline-flex;
@@ -229,7 +235,7 @@ import TitleText from './TitleText.vue';
     font-size: 1rem;
     color: #FFFFFF;
     line-height: 2rem;
-    width: 39.438rem;
+    width: 39rem;
 }
 .text-content h1 {
     position: relative;
@@ -327,6 +333,7 @@ import TitleText from './TitleText.vue';
     position: relative;
     display: flex;
     margin-left: 6%;
+    bottom: 12px;
 }
 .image-block-B {
     position: relative;
@@ -391,14 +398,18 @@ import TitleText from './TitleText.vue';
 .media-container {
     margin: 0 2rem 2rem 0;
 }
-
 /* Hero 5 */
+.Hero-element-five {
+    width: 89rem;
+    margin-top: 10rem;
+}
 .Hero-element-five h2 {
     font-family: 'Sofia';
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.5rem;
     color: #FFFFFF;
+    padding: 0 .6rem;
 }
 .Hero-element-five P {
     display: flex;
@@ -408,21 +419,38 @@ import TitleText from './TitleText.vue';
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.7rem;
-    
+    padding: 0 .6rem;
 }
 .five-txt-top {
     display: flex;
     gap: 40px;
 
 }
+.five-txt-top p {
+    font-family: "DM Sans";
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
 .iconIMG img{
     width: 20px;
-    height: 100px;
-    top: -40.5px;
     padding: 6px 0 8px 8px;
+    margin-left: 2rem;
+}
+.videoFHD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.videoFHD video {
+    width: 90rem;
+    height: 51.5rem;
+    height: 664px;
+    object-fit: cover;
+    padding: 1rem .5rem;
 }
 /* Hero 6 */
-
 .Hero-element-six{
     position: relative;
     margin-top: 2rem;
@@ -455,7 +483,7 @@ import TitleText from './TitleText.vue';
     margin-top: 1.5rem;
     font-family: 'Mulish';
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 3rem;
     color: #394B44;
 }
