@@ -45,16 +45,19 @@ import Button from './Button.vue';
 </template>
 
 <style scoped>
+
 .Card-wrapper {
-    width: 89rem;
+    width: 100%;
+    max-width: 1110px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
 }
-
 .card-container {
-    width: 33.75rem;
-    height: 10.938rem;
+    width: 100%;
+    max-width: 540px;
+    height: 175px;
     background-color: #FFF5E0;
     border-radius: 0.9rem;
     padding: 2.5rem;
@@ -66,27 +69,31 @@ import Button from './Button.vue';
 .title h1 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 1.9rem;
-    margin-bottom: 1rem;
-    line-height: 2.2rem;
+    font-size: 3rem;
+    line-height: 4.5rem;
     color: #1C1C1E;
 }
 .title p {
     font-family: 'Mulish';
     font-weight: 400;
-    font-size: .875rem;
-    line-height: 1.313rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #1C1C1E;
 }
 .BG {
-    width: 6.25rem;
-    height: 6.25rem;
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
     background-color:#D9D9D9 ;
     border-radius: 0.625rem;
 }
 .BTN-Footer {
+    width: 100%;
+    max-width: 250px;
+    height: 54px;
     z-index: 2;
-    margin-left: 8rem;
-    margin-top: .5rem;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    padding: 16px 18px 16px 18px;
 }
 </style>

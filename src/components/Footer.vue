@@ -81,6 +81,8 @@ import Line from './Line.vue';
     margin-top: 4rem;
 }
 .contacto-local {
+    width: 100%;
+    max-width: 255px;
     line-height: 1.4rem;
     gap: 1.4rem;
     margin-bottom: .4rem;
@@ -89,93 +91,108 @@ import Line from './Line.vue';
 .contacto-local h2 {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     opacity: 50%;
     color: #FFFFFF;
 }
 .contacto-local h3 {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #F1FAEE;
 }
 .contacto-local img {
-    width: 126.6px;
+    width: 100%;
+    max-width: 126.6px;
     height: 36.64px;
     margin-top: 1rem;
 }
 .container-sobre {
-    width: 89rem;
+    width: 100%;
+    max-width: 1440px;
+    height: 313.64px;
+    margin: 0 auto;
     margin-top: 2rem;
 }
 .content-sobre {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
-    justify-content: center;
-    gap: 12.5rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
+.local-content {
+    width: 100%;
+    max-width: 255px;
+}
 .contacto-local {
     display: flex;
     flex-direction: column;
 }
 .contacto-content {
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    max-width: 255px;
 }
-
 .contacto-content h1 { 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 1.3rem;
-    line-height: 2.2rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
     color: #FFFFFF;
 }
-
 .itens-footer {
+    width: 100%;
+    max-width: 255px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    margin: 1.5rem 4rem 1rem 0;
+    margin: 1.5rem 0;
     gap: 2rem;
 }
 .itens-footer h3 {
+    width: 105px;
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #FFFFFF;
     opacity: 50%;
 }
 .itens-footer h2 {
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #F1FAEE;
 }
 .itens-footer img {
     opacity: 50%;
 }
-
 .footer-copy {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0 1rem 0;
+    margin: 4rem 0 8rem 0;
     gap: 2rem;
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 0.9rem;
-    line-height: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     color: #F1FAEE;
     opacity: 50%;
 }
-
+.footer-copy p {
+    margin-bottom: 2rem;
+}
 .background {
-    width: 4.063rem;
-    height: 4.063rem;
+    width: 65px;
+    max-width: 65px;
+    height: 65px;
     border-radius: 50%;
     background-color: #D9D9D9;
 }
@@ -183,7 +200,6 @@ import Line from './Line.vue';
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 4rem 0 4rem 0;
+    margin: 4rem 0 8rem 0;
 }
-
 </style>

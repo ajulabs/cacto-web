@@ -69,9 +69,10 @@ const emit = defineEmits();
 </template>
 
 <style scoped>
+
 .overlay {
-    width: 90rem;
-    height: 90rem;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;

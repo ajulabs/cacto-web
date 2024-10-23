@@ -157,9 +157,6 @@ import TitleText from './TitleText.vue';
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Hero Section */
 .hero-section {
@@ -170,17 +167,18 @@ import TitleText from './TitleText.vue';
     margin-top: 5rem;
 }
 .hero-content {
+    width: 100%;
+    max-width: 1440px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    margin-top: 4rem;
 }
 .hero-stats {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    max-width: 70rem;
+    max-width: 1440px;
     margin-top: 8rem;
     gap: 1.25rem;
     color: #FFFFFF;
@@ -198,36 +196,12 @@ import TitleText from './TitleText.vue';
     width: 720px;
     height: 902px;
     object-fit: cover;
-    margin-top: 10rem;
     padding: 4rem 0 ;
 }
-.join-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    width: 18.141rem;
-    height: 5.069rem;
-    box-shadow: 10.82px 10.82px 0px 0px #FFFFFF;
-    margin-top: 1.5rem;
-}
-.join-button img {
-    margin-left: 1.5rem;
-    padding-top: 0.5rem;
-    font-weight: bold;
-}
-.join-button:hover {
-    background-color: #e65500;
-}
 .text-container {
-    left: 0;
-    margin-right: 2rem;
+    width: 100%;
+    max-width: 631px;
+    margin-right: 0rem;
 }
 .text-content {
     font-family: 'Poppins', sans-serif;
@@ -267,28 +241,34 @@ import TitleText from './TitleText.vue';
     color: #FFFFFF;
 }
 .hero-stats h2 {
+    width: 1170px;
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
     align-items: center;
 }
 .stats-counter {
+    width: 100%;
+    max-width: 1376px;
+    height: 108px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
 }
 .stats-counter h1 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 6.4rem;
+    line-height: 6.8rem;
 }
 .stats-counter h3 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: #A0A3AA;
-    line-height: 2rem;
+    line-height: 3.2rem;
 }
 .stat-symbol {
     color: #e65500;
@@ -296,19 +276,23 @@ import TitleText from './TitleText.vue';
 
 /* Features Section */
 .hero-features {
-    width: 86rem;
-    height: 69.04rem;
+    width: 100%;
+    max-width: 1376px;
+    height: 1104px;
     gap: 6.1rem;
 }
 .feature-group-one, .feature-group-two {
+    width: 100%;
+    max-width: 1376px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 9rem;
-    max-width: 88rem;
-    width: 100%;
 }
 .feature-element-one, .feature-element-two {
-    width: 48%;
+    width: 100%;
+    height: 503.56px;
+    max-width: 624.57px;
+    margin-bottom: 4rem;
 }
 .gradient-overlay {
     position: absolute;
@@ -316,8 +300,8 @@ import TitleText from './TitleText.vue';
     border-radius: 1.708rem;
     background: linear-gradient(40.04deg, #FF6400 0%, #FFC7A4 100%);
     opacity: 0.043rem;
-    width: 39.036rem;
-    height: 19.518rem;
+    width: 624.57px;
+    height: 312.28px;
     z-index: 2;
 }
 .gradient-overlay-B {
@@ -325,8 +309,8 @@ import TitleText from './TitleText.vue';
     border-radius: 1.708rem;
     background: linear-gradient(40.04deg, #FF6400 0%, #FFC7A4 100%);
     opacity: 0.043rem;
-    width: 39.036rem;
-    height: 19.518rem;
+    width: 624.57px;
+    height: 312.28px;
     z-index: 2;
 }
 .image-block {
@@ -341,6 +325,8 @@ import TitleText from './TitleText.vue';
     margin-left: 6%;
 }
 .image-block img {
+    width: 545px;
+    height: 468.43px;
     position: relative;
     object-fit: cover;
     z-index: 2;   
@@ -355,10 +341,10 @@ import TitleText from './TitleText.vue';
     position: relative;
     z-index: 3;
     background: #FFFFFF;
-    width: 18.288rem;
-    height: 5.889rem;
-    left: 26rem;
-    bottom: 19.5rem;
+    width: 283.01px;
+    height: 94.23px;
+    left: 410px;
+    bottom: 325px;
     border-radius: 0.4em;
     display: flex;
     align-items: center;
@@ -369,10 +355,8 @@ import TitleText from './TitleText.vue';
 .feature-card-B {
     position: relative;
     z-index: 3;
-    width: 18.288rem;
-    height: 5.889rem;
-    right: 5rem;
-    bottom: 17rem;
+    right: 8.5rem;
+    bottom: 25rem;
     border-radius: 0.4em;
     display: flex;
     align-items: center;
@@ -382,8 +366,6 @@ import TitleText from './TitleText.vue';
 }
 .cardVector-B {
     position: relative;
-    width: 18.288rem;
-    height: 5.889rem;
     right: 4.1rem;
     top: 3rem;
     border-radius: 0.4em;
@@ -392,6 +374,7 @@ import TitleText from './TitleText.vue';
     text-align: center;
     padding: 0.476rem 0.22rem 0.476rem 1.22rem;
 }
+
 .feature-four-container-B {
     margin-top: 3rem;
 }
@@ -400,14 +383,15 @@ import TitleText from './TitleText.vue';
 }
 /* Hero 5 */
 .Hero-element-five {
-    width: 89rem;
+    width: 100%;
+    max-width: 1440px;
     margin-top: 10rem;
 }
 .Hero-element-five h2 {
-    font-family: 'Sofia';
-    font-size: 2rem;
+    font-family: 'Sofia Sans';
+    font-size: 4.8rem;
     font-weight: 700;
-    line-height: 2.5rem;
+    line-height: 4rem;
     color: #FFFFFF;
     padding: 0 .6rem;
 }
@@ -415,16 +399,16 @@ import TitleText from './TitleText.vue';
     display: flex;
     align-items: center;
     color: #FFFFFF;
-    font-family: 'Sofia';
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.7rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     padding: 0 .6rem;
 }
 .five-txt-top {
+    width: 100%;
     display: flex;
-    gap: 40px;
-
+    gap: 30px;
 }
 .five-txt-top p {
     font-family: "DM Sans";
@@ -438,30 +422,37 @@ import TitleText from './TitleText.vue';
     margin-left: 2rem;
 }
 .videoFHD {
+    width: 100%;
+    height: 664px;
+    max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .videoFHD video {
-    width: 90rem;
-    height: 51.5rem;
-    height: 664px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    padding: 1rem .5rem;
 }
 /* Hero 6 */
 .Hero-element-six{
+    width: 1440px;
+    height: 902px;
+    max-width: 1440px;
     position: relative;
     margin-top: 2rem;
 }
 .Hero-element-six img {
+    width: 1440px;
+    height: 902px;
+    max-width: 1440px;
     object-fit: cover;
 }
 .content-six-txt {
     position: absolute;
-    width: 43rem;
-    height: 40rem;
+    width: 100%;
+    max-width: 720px;
+    height: 649px;
     top: 6.125rem;
     left: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
@@ -475,24 +466,23 @@ import TitleText from './TitleText.vue';
 .content-six-txt h1 {
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 2.81rem;
-    line-height: 3.37rem;
+    font-size: 4.5rem;
+    line-height: 5.4rem;
     color: #1c1c1e;
 }
 .content-six-txt p {
     margin-top: 1.5rem;
     font-family: 'Mulish';
-    font-size: 1.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
-    line-height: 3rem;
+    line-height: 4.8rem;
     color: #394B44;
 }
 .span-BTN-ELSIX {
     position: absolute;
-    top: 35rem;
-    right: 2.367rem;
+    top: 55rem;
     bottom: 10rem;
-    left: 8rem;
+    left: 11rem;
     z-index: 3;
 }
 </style>

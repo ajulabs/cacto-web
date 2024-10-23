@@ -20,27 +20,27 @@ import BtnSejaMember from './BtnSejaMember.vue';
 </template>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
     .container {
         position: relative;
         display: flex;
         justify-content: center;
         align-items:center;
         width: 100%;
-    }
-
+}
     .imgOne {
-        position: relative;
-        max-height: 100vh;
-    }
-
-    .imgOne img {
-        display: block;
         width: 100%;
-        height: 100%;
+        height: 902px;
+        max-width: 1440px;
+        position: relative;
+}
+    .imgOne img {
+        width: 100%;
+        height: 902px;
+        max-width: 1440px;
+        margin-top: 7rem;
         object-fit: cover;
-    }
-
+}
     .main-txt {
         position: absolute;
         bottom: 1.25rem;
@@ -48,33 +48,32 @@ import BtnSejaMember from './BtnSejaMember.vue';
         transform: translate(-50%);
         text-align: center;
         color: #FFFFFF;
-    }
-
+}
     h1, h2 {
         margin: 0;
         font-family: 'Poppins',sans-serif;
-    }
-
+}
     h1 {
-        font-size: 2rem;
+        width: 1038px;
+        font-size: 4.8rem;
         font-weight: 700;
-        line-height: 3.6rem;
+        line-height: 5.7rem;
         text-align: left;
-    }
-
+}
     h2 {
         font-family: Poppins;
-        font-size: 1.2rem;
+        font-size: 2.4rem;
         font-weight: 500;
-        line-height: 2.25rem;
-        padding-bottom: 0.5rem;
-    }
-
+        line-height: 3.6rem;
+        padding-bottom: 1.5rem;
+}
     .icon-logo {
         vertical-align: middle;
         padding: 0.3rem;
         height: 2.1rem;
         width: auto;
+}
+    @media(max-width:1440px){
     }
 
     /* Smartphones pequenos */
@@ -99,14 +98,14 @@ import BtnSejaMember from './BtnSejaMember.vue';
         }
 
         h1 {
-            font-size: 0.7rem;
+            /* font-size: 0.7rem; */
             line-height: 0.6rem;
             text-align: center;
             padding: 0px 0px 3px 0px;
         }
 
         h2 {
-            font-size: 0.45rem;
+            /* font-size: 0.45rem; */
             padding: 0;
             line-height: 0.7rem;
         }

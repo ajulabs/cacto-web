@@ -25,24 +25,22 @@ import ModalAgendamento from './ModalAgendamento.vue';
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    width: 32.5rem;
-    height: 3.375rem;
+    width: 50%;
+    height: 25%;
     border-radius: 10px;
     padding: 16px 18px 16px 18px;
     gap: 10px;
 }
-
 .div_ctaBtn button:hover {
     background-color: #e65500;
 }
-
 /* Smartphones pequenos */
 @media(max-width:575px){
     .cta-button {
-        font-size: 0.6rem;
+        /* font-size: 0.6rem; */
         width: 8rem;
         height: 1rem;
         padding: 0px;
@@ -50,5 +48,4 @@ import ModalAgendamento from './ModalAgendamento.vue';
         border-radius: 4px;
     }
 }
-
 </style>

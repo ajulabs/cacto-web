@@ -18,7 +18,6 @@ const handleMenuClick = () => {
 
 <template>
     <div class="container">
-        <header>
             <div class="content">
                 <nav>
                     <div class="logo">
@@ -36,61 +35,46 @@ const handleMenuClick = () => {
                     </div>
                 </nav>
             </div>
-        </header>
     </div>
 </template>
 
 <style scoped>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-    .container{
-        background:#1A1A1A;
-        box-shadow: 0px 4px 18px 0px #00000014;
-        width: 100%;
-    }
-
-    .li {
-        font-family: 'Poppins', sans-serif;
-        font-size: 1rem;
-        font-weight: 600;
-        line-height: 1.5rem;
-    }
 
     .content {
-        max-width: 90rem;
-        height: 4.875rem;
-        padding: 0 5%;
-        margin: 0 auto;
-        gap: 0px;
-        opacity: 0px;
+        width: 100%;
+        height: 78px;
+        max-width: 100vw;
+        padding-top: 2rem;
+        position: fixed;
+        z-index: 1000;
+        background:#1A1A1A;
+        box-shadow: 0px 4px 18px 0px #00000014;
     }
-
+    .ul {
+        width: 100%;
+        height: 24px;
+        max-width: 584px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .ul li a {
+        font-family: 'DM+Sans', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 2.4rem;
+        color: #FF6400;
+    }
     nav {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        padding: 1rem;
     }
 
     .logo {
-        width: 7.913rem;
-        height: 2.29rem;
-        gap: 0px;
-        opacity: 0px;
-    }
-
-    .ul {
-        display: flex;
-        align-items: center;
-        opacity: 0px;
-    }
-    .ul li {
-        margin: 0 1.188rem;
-        font-size: 1rem;
-    }
-
-    .ul li a {
-        color: #FF6400;
+        width: 100%;
+        max-width: 126.6px;
+        height: 36.64px;
     }
 
     .menu-ic {
