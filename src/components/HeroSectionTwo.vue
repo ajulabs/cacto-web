@@ -24,7 +24,7 @@ import TitleText from './TitleText.vue';
         </div>
 
 
-        <div class="hero-stats">
+        <!-- <div class="hero-stats">
             <h2>adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr</h2>
             <div class="stats-counter">
                 <div class="stat-item">
@@ -51,13 +51,17 @@ import TitleText from './TitleText.vue';
                     <h3> Eventos </h3>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="hero-features">
+
+        <!-- <div class="hero-features">
+
             <div class="feature-group-one ">
                 <div class="feature-element-one lifting weight">
                     <div class="feature-content">
-                        <div class="gradient-overlay"></div>
+                        <div class="gradient-overlay">
+
+                        </div>
                         <div class="image-block">
                             <img src="/src/assets/image 6.png" alt="">
                         </div>
@@ -76,12 +80,6 @@ import TitleText from './TitleText.vue';
             </div>
 
             <div class="feature-group-two">
-                <div class="feature-element-one">
-                    <ChekList
-                        title="LOREM IPSUM"
-                        description="Desenvolva o prazer de se exercitar através de um método embasado em estudos atualizados nas áreas de educação física, nutrição, fisioterapia e psicologia."
-                    />
-                </div>
                 <div class="feature-element-two squat">
                     <div class="feature-content">
                         <div class="gradient-overlay-B"></div>
@@ -96,26 +94,33 @@ import TitleText from './TitleText.vue';
                         </div>
                     </div>
                 </div>
+                <div class="feature-element-one">
+                    <ChekList
+                        title="LOREM IPSUM"
+                        description="Desenvolva o prazer de se exercitar através de um método embasado em estudos atualizados nas áreas de educação física, nutrição, fisioterapia e psicologia."
+                    />
+                </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="hero-content">
+
+        <!-- <div class="hero-content">
             <div class="media-container">
                 <video src="/src/assets/video2.mp4" autoplay muted loop playsinline></video>
             </div>
             <div class="text-container">
-                <div class="text-content">
+                <div class="text-content txt-content-left">
                     <TitleText
                         title="Lorem Ipsun"
                         description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
                     />
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="hero-content">
+        <!-- <div class="hero-content">
             <div class="text-container">
-                <div class="text-content txt-content-left">
+                <div class="text-content txt-content-rigth">
                     <TitleText
                         title="Lorem Ipsun"
                         description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
@@ -125,9 +130,9 @@ import TitleText from './TitleText.vue';
             <div class="media-container">
                 <video src="/src/assets/video3.mp4" autoplay muted loop playsinline></video>
             </div>
-        </div>
+        </div> -->
 
-        <div class="Hero-element-five">
+        <!-- <div class="Hero-element-five">
             <div>
                 <h2>Desfrute de Benefícios Exclusivos</h2>
             </div>
@@ -141,9 +146,9 @@ import TitleText from './TitleText.vue';
             <span class="videoFHD">
                 <video src="/src/assets/video4.mp4" autoplay muted loop playsinline></video>
             </span>
-        </div>
+        </div> -->
 
-        <div class="Hero-element-six">
+        <!-- <div class="Hero-element-six">
             <img class="background-image" src="/src/assets/image-5.png" alt="">
             <div class="content-six-txt">
                 <h1>LOREL LORE</h1>
@@ -152,7 +157,7 @@ import TitleText from './TitleText.vue';
             <span class="span-BTN-ELSIX">
                 <BtnSejaMemberTwo/>
             </span>
-        </div>
+        </div> -->
     </section>
 </template>
 
@@ -162,7 +167,7 @@ import TitleText from './TitleText.vue';
 .hero-section {
     width: 100%;
     max-width: 1440px;
-    height: auto;
+    /* height: auto; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -204,8 +209,6 @@ import TitleText from './TitleText.vue';
     height: 100px;
     max-width: 720px;
     object-fit: cover;
-    /* margin-top: 10rem; */
-    /* padding: 2rem 0 ; */
 }
 .text-container {
     width: 100%;
@@ -215,11 +218,6 @@ import TitleText from './TitleText.vue';
     width: 100%;
     height: 598px;
     max-width: 631px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #FFFFFF;
-    line-height: 2rem;
 }
 .text-content h1 {
     position: relative;
@@ -251,12 +249,12 @@ import TitleText from './TitleText.vue';
     color: #FFFFFF;
 }
 .hero-stats h2 {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 4.8rem;
-    align-items: center;
 }
 .stats-counter {
     width: 100%;
@@ -288,27 +286,31 @@ import TitleText from './TitleText.vue';
 .hero-features {
     width: 100%;
     max-width: 1376px;
-    height: 1104px;
-    gap: 6.1rem;
 }
-.feature-group-one, .feature-group-two {
+.feature-group-one {
     width: 100%;
     max-width: 1376px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
-.feature-element-one, .feature-element-two {
+.feature-group-two {
     width: 100%;
-    height: 503.56px;
-    max-width: 624.57px;
-    margin-bottom: 4rem;
+    height: auto;
+    max-width: 1376px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 .feature-content {
     position: relative;
     width: 100%;
-    max-width: 624.57px;
+    max-width: 600.57px;
     height: 503.56px;
+}
+.feature-element-two, .feature-element-one {
+    width: 100%;
+    max-width: 605.05px;
 }
 .gradient-overlay {
     position: absolute;
@@ -334,7 +336,9 @@ import TitleText from './TitleText.vue';
 .image-block {
     position: relative;
     display: flex;
-    margin-left: 6%;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 6%; */
     bottom: 12px;
 }
 .image-block-B {
@@ -343,24 +347,27 @@ import TitleText from './TitleText.vue';
     margin-left: 6%;
 }
 .image-block img {
-    width: 545px;
-    height: 468.43px;
+    width: 100%;
+    max-width: 546px;
     position: relative;
     object-fit: cover;
     z-index: 2;   
 }
 .image-block-B img {
+    width: 100%;
+    max-width: 546px;
     position: relative;
     object-fit: cover;
     margin-top: 6%;
     z-index: 2;   
 }
 .feature-card {
+    width: 100%;
+    height: 94.23px;
+    max-width: 283.01px;
     position: relative;
     z-index: 3;
     background: #FFFFFF;
-    width: 283.01px;
-    height: 94.23px;
     left: 410px;
     bottom: 325px;
     border-radius: 0.4em;
@@ -468,7 +475,7 @@ import TitleText from './TitleText.vue';
 }
 .Hero-element-six img {
     width: 100%;
-    height: 902px;
+    max-width: 1376px;
     object-fit: cover;
 }
 .content-six-txt {
@@ -510,13 +517,20 @@ import TitleText from './TitleText.vue';
 }
 
 /* media queries*/
+@media (max-width: 1457px) {
+    .txt-content-rigth{
+        padding-left: 2rem;
+    }
+
+}
+
 @media (max-width: 1440px) {
     .media-container video {
         width: 100%;
         margin-top: 8rem;
     }
     .text-content {
-        height: 498px;
+        height: 260px;
     }
     .videoFHD video {
         width: 80%;
@@ -527,10 +541,47 @@ import TitleText from './TitleText.vue';
     }
 }
 
-@media (max-width: 1400px) {
-
+@media (max-width: 768px) {
+    .hero-content {
+        align-items: flex-start;
+    }
+    .text-container {
+        padding-top: 8rem;
+    }
 }
-@media (max-width: 1392px) {
-    
+@media (max-width: 575px) {
+    .hero-section {
+        max-width: 574px;
+    }
+    .hero-content {
+        flex-direction: column;
+    }
+    .feature-group-one {
+        flex-direction: column;
+    }
+    .feature-group-two {
+        flex-direction: column;
+    }
+    .feature-content {
+        max-width: 476px;
+        padding: 0 2rem;
+    }
+    .feature-card {
+        max-width: 190px;
+        max-height: 60px;
+        left: 356px;
+        bottom: 300px;
+        border-radius: 5px;
+    }
+    .content-six-txt {
+        max-width: 182.56px;
+    }
+    .gradient-overlay {
+        max-width: 450px;
+        top: 93.37px;
+    }
+    .image-block img {
+        max-width: 500px;
+    }
 }
 </style>

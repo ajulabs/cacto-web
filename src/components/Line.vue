@@ -20,4 +20,10 @@
     margin: 0;
     opacity: 10%;
 }
+
+@media (max-width: 575px) {
+    .divisoria {
+        margin-bottom: 2rem;
+    }
+}
 </style>
