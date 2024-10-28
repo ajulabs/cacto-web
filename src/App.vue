@@ -5,10 +5,10 @@ import { RouterView, RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div class="mainLayout">
-        <!-- <Header/> -->
+    <div>
+        <Header/>
         <router-view></router-view>
-        <!-- <Footer/> -->
+        <Footer/>
     </div>
 </template>
 
@@ -29,12 +29,12 @@ import { RouterView, RouterLink } from 'vue-router';
         font-size: 62.5%;
     }
 
-    /* media queries*/
-@media (max-width: 1024px) {
+@media (max-width:1420px){
     html {
         font-size: 55%;
     }
 }
+
 @media (max-width: 768px) {
     html {
         font-size: 45%;

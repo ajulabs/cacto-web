@@ -38,7 +38,7 @@ import BtnSejaMember from './BtnSejaMember.vue';
 }
     .imgOne img {
         width: 100%;
-        /* max-width: 1440px; */
+        max-width: 1440px;
         /* margin-top: 7rem; */
         position: relative;
         object-fit: cover;
@@ -82,6 +82,14 @@ import BtnSejaMember from './BtnSejaMember.vue';
         .container {
             max-width: 1400px;
             padding: 0 1rem;
+        }
+    }
+    @media (max-width: 1420px){
+        .container {
+            max-width: 1400px;
+        }
+        .imgOne img{
+            max-width: 1400px;
         }
     }
 

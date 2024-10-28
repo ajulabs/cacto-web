@@ -46,7 +46,7 @@ const handleMenuClick = () => {
         max-width: 100vw;
         padding-top: 2rem;
         position: fixed;
-        z-index: 1000;
+        z-index: 100;
         background:#1A1A1A;
         box-shadow: 0px 4px 18px 0px #00000014;
     }

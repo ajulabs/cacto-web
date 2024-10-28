@@ -24,7 +24,7 @@ import TitleText from './TitleText.vue';
         </div>
 
 
-        <!-- <div class="hero-stats">
+        <div class="hero-stats">
             <h2>adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr</h2>
             <div class="stats-counter">
                 <div class="stat-item">
@@ -51,10 +51,10 @@ import TitleText from './TitleText.vue';
                     <h3> Eventos </h3>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
-        <!-- <div class="hero-features">
+        <div class="hero-features">
 
             <div class="feature-group-one ">
                 <div class="feature-element-one lifting weight">
@@ -101,10 +101,10 @@ import TitleText from './TitleText.vue';
                     />
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
-        <!-- <div class="hero-content">
+        <div class="hero-content">
             <div class="media-container">
                 <video src="/src/assets/video2.mp4" autoplay muted loop playsinline></video>
             </div>
@@ -116,9 +116,9 @@ import TitleText from './TitleText.vue';
                     />
                 </div>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="hero-content">
+        <div class="hero-content">
             <div class="text-container">
                 <div class="text-content txt-content-rigth">
                     <TitleText
@@ -130,9 +130,9 @@ import TitleText from './TitleText.vue';
             <div class="media-container">
                 <video src="/src/assets/video3.mp4" autoplay muted loop playsinline></video>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="Hero-element-five">
+        <div class="Hero-element-five">
             <div>
                 <h2>Desfrute de Benefícios Exclusivos</h2>
             </div>
@@ -146,9 +146,9 @@ import TitleText from './TitleText.vue';
             <span class="videoFHD">
                 <video src="/src/assets/video4.mp4" autoplay muted loop playsinline></video>
             </span>
-        </div> -->
+        </div>
 
-        <!-- <div class="Hero-element-six">
+        <div class="Hero-element-six">
             <img class="background-image" src="/src/assets/image-5.png" alt="">
             <div class="content-six-txt">
                 <h1>LOREL LORE</h1>
@@ -157,7 +157,7 @@ import TitleText from './TitleText.vue';
             <span class="span-BTN-ELSIX">
                 <BtnSejaMemberTwo/>
             </span>
-        </div> -->
+        </div>
     </section>
 </template>
 
