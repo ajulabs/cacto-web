@@ -65,7 +65,9 @@ const emit = defineEmits();
                             </select>
                         </span>
 
-                        <button class="btnConfirm" @click="confirm"> Confirmar </button>
+                        <span class="BTN-container">
+                            <button class="btnConfirm" @click="confirm"> Confirmar </button>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -89,7 +91,102 @@ const emit = defineEmits();
     z-index: 200;
 }
 .content {
-    
+    width: 100%;
+    max-width: 900px;
+    height: 100%;
+    max-height: 504px;
+    display: flex;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    animation: .3s anim-modal;
+    box-shadow: 0px 4px 18px 0px #00000014;
+    margin: 0 auto;
+}
+.content img {
+    width: 100%;
+    max-width: 380px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2.5rem 0 2.5rem;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+.title h2 {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color: #1c1c1e;
+    padding: 2rem 2rem 0 2.5rem;
+}
+.closeX {
+    font-family: 'poppins';
+    font-size: 2.4rem;
+    border: none;
+    background: none;
+    color: #1c1c1e;
+    cursor: pointer;
+    margin-right: 4rem;
+}
+.listUl {
+    color: #FF6400;
+}
+
+label {
+    color: #1c1c1e;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+}
+input,
+select {
+    width: 100%;
+    max-width: 460px;
+    height: 100%;
+    max-height: 100px;
+    border: solid 1px #e5e5ea;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-top: .5rem;
+}
+.BTN-container {
+    width: 100%;
+    max-width: 510px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btnConfirm {
+    width: 100%;
+    /* max-width: 220px; */
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    padding: 1.7rem;
+    margin: 1.5rem 2.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #FF6400;
+}
+.content-form {
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    max-height: 450px;
+    text-align: start;
+    padding: 0 2rem;
 }
 
 @keyframes anim-modal {
