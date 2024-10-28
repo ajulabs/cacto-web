@@ -94,7 +94,7 @@ const emit = defineEmits();
     width: 100%;
     max-width: 900px;
     height: 100%;
-    max-height: 504px;
+    max-height: 585px;
     display: flex;
     overflow: hidden;
     background-color: #FFFFFF;
@@ -103,9 +103,15 @@ const emit = defineEmits();
     box-shadow: 0px 4px 18px 0px #00000014;
     margin: 0 auto;
 }
+.content-img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+}
 .content img {
     width: 100%;
-    max-width: 380px;
+    height: auto;
+    max-width: 320px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     object-fit: cover;
@@ -116,8 +122,16 @@ const emit = defineEmits();
     padding: 1rem 2.5rem 0 2.5rem;
 }
 .title {
+    width: 100%;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .title h2 {
     font-family: 'Poppins';
@@ -125,7 +139,7 @@ const emit = defineEmits();
     font-size: 3rem;
     line-height: 4.5rem;
     color: #1c1c1e;
-    padding: 2rem 2rem 0 2.5rem;
+    padding: 4rem 0 2rem 0;
 }
 .closeX {
     font-family: 'poppins';
@@ -155,7 +169,7 @@ select {
     max-height: 100px;
     border: solid 1px #e5e5ea;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 2rem;
     margin-top: .5rem;
 }
 .BTN-container {
@@ -167,7 +181,6 @@ select {
 }
 .btnConfirm {
     width: 100%;
-    /* max-width: 220px; */
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 1.5rem;
@@ -197,5 +210,13 @@ select {
         transform: translateY(0);
     }
 }
-
+@media (max-width:910px) {
+    .content {
+        margin: 0 4rem;
+    }
+    .input,
+    select {
+        margin: 1.5rem;
+    }
+}
 </style>
