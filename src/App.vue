@@ -42,7 +42,7 @@ import { RouterView, RouterLink } from 'vue-router';
 }
 @media (max-width: 575px) {
     html {
-        font-size: 30%;
+        font-size: 40%;
     }
 }
 @media (max-width: 375px) {

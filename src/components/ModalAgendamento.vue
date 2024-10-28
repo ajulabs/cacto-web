@@ -22,28 +22,28 @@ const emit = defineEmits();
 <template>
     <Teleport to="body">
         <div v-if="isVisible" class="overlay">
-            <div class="content">
-                <div class="content-img">
-                    <img src="/src/assets/Modal.png" alt="">
-                </div>
+        <div class="box">
+            <div class="img-box">
+                <img src="/src/assets/Modal.png" alt="">
+            </div>
 
-                <div class="container-form">
+            <div class="form-box">
                     <div class="title">
                         <h2> Agende sua experiência </h2>
                         <button class="closeX" @click="closeModal"> X </button>
                     </div>
-                    
-                    <div class="content-form">
+
+                    <form class="content-form">
                         <span class="list">
                             <label for="nome"> Nome <span class="listUl"> * </span> </label>
                             <input type="text" name="nome" id="nome" placeholder="informe seu nome aqui">
                         </span>
-                        
+
                         <span class="list">
                             <label for="whatsapp"> WhatsApp <span class="listUl"> * </span> </label>
                             <input type="tel" name="" id="whatsapp" placeholder="(XX) XXXXX-XXXX">
                         </span>
-                        
+
                         <span class="list">
                             <label for=""> Se você já decidiu a modalidade que deseja praticar, escolha abaixo. Caso ainda esteja indeciso, selecione "Ainda não sei".</label>
                             <select id="modality" v-model="selectedModality">
@@ -68,7 +68,8 @@ const emit = defineEmits();
                         <span class="BTN-container">
                             <button class="btnConfirm" @click="confirm"> Confirmar </button>
                         </span>
-                    </div>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -89,98 +90,89 @@ const emit = defineEmits();
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
     z-index: 200;
-}
-.content {
-    width: 100%;
-    max-width: 900px;
-    height: 100%;
-    max-height: 585px;
-    display: flex;
     overflow: hidden;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    animation: .3s anim-modal;
-    box-shadow: 0px 4px 18px 0px #00000014;
+}
+.box {
+    width: 100%;
+    max-width: 920px;
+    display: flex;
     margin: 0 auto;
 }
-.content-img {
-    width: 100%;
-    height: auto;
-    max-width: 320px;
+.img-box {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
 }
-.content img {
+.img-box img {
     width: 100%;
-    height: auto;
-    max-width: 320px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    max-width: 1440px;
     object-fit: cover;
 }
-.list {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2.5rem 0 2.5rem;
+.form-box {
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .title {
-    width: 100%;
-    max-width: 500px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.container-form {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 .title h2 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 4.5rem;
     color: #1c1c1e;
-    padding: 4rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
 }
 .closeX {
+    align-self: baseline;
     font-family: 'poppins';
     font-size: 2.4rem;
     border: none;
     background: none;
     color: #1c1c1e;
     cursor: pointer;
-    margin-right: 4rem;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 1rem 2.5rem 0 2.5rem;
+}
+.list label {
+    color: #1c1c1e;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.1rem;
 }
 .listUl {
     color: #FF6400;
 }
-
-label {
-    color: #1c1c1e;
-    font-family: 'Poppins';
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 2.1rem;
-}
 input,
 select {
     width: 100%;
-    max-width: 460px;
-    height: 100%;
-    max-height: 100px;
+    max-width: 1400px;
     border: solid 1px #e5e5ea;
-    border-radius: 10px;
-    padding: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+    outline: none;
     margin-top: .5rem;
 }
 .BTN-container {
-    width: 100%;
-    max-width: 510px;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    margin: 0 2.5rem;
 }
 .btnConfirm {
     width: 100%;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins';
     font-weight: 700;
     font-size: 1.5rem;
@@ -188,18 +180,10 @@ select {
     cursor: pointer;
     color: #FFFFFF;
     padding: 1.7rem;
-    margin: 1.5rem 2.5rem;
+    margin-top: 2rem;
     border-radius: 10px;
     border: none;
     background-color: #FF6400;
-}
-.content-form {
-    width: 100%;
-    max-width: 640px;
-    height: 100%;
-    max-height: 450px;
-    text-align: start;
-    padding: 0 2rem;
 }
 
 @keyframes anim-modal {
@@ -210,13 +194,72 @@ select {
         transform: translateY(0);
     }
 }
-@media (max-width:910px) {
-    .content {
-        margin: 0 4rem;
+@media (max-width:930px) {
+    .img-box {
+        display: none;
     }
-    .input,
-    select {
-        margin: 1.5rem;
+    .box {
+        width: 700px;
+    }
+    .form-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 740px) {
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem;
+        height: auto;
+    }
+}
+@media (max-width: 425px){
+    .form-box {
+        height: 620px;
+    }
+    .title h2, .closeX {
+        font-size: 4rem;
+        margin-top: .2rem;
+    }
+    .list input,
+    .list select {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    .list label {
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+    }
+    .btnConfirm {
+        padding: 2rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 375px){
+    .form-box {
+        height: 650px;
+    }
+    .title h2, .closeX {
+        font-size: 6rem;
+        margin-top: .4rem;
+        margin-bottom: 4rem;
+    }
+    .list input,
+    .list select {
+        font-size: 4rem;
+        padding: 2.5rem;
+    }
+    .list label {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+    .btnConfirm {
+        padding: 6rem;
+        font-weight: 600;
+        font-size: 4.5rem;
     }
 }
 </style>
