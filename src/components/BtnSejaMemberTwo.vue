@@ -23,6 +23,10 @@ const navigateToPage = () => {
 <style scoped>
 
 .join-button {
+    width: 100%;
+    max-width: 290.26px;
+    height: 100%;
+    max-height: 87.1px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -33,8 +37,6 @@ const navigateToPage = () => {
     font-size: 1.894rem;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    width: 290.26px;
-    height: 87.1px;
     box-shadow: 10.82px 10.82px 0px 0px #FFFFFF;
     margin-top: 2.8rem;
 }
@@ -45,5 +47,14 @@ const navigateToPage = () => {
 }
 .join-button:hover {
     background-color: #e65500;
+}
+
+@media (max-width: 575px) {
+    .join-button{
+        max-width: 180px;
+        max-height: 60px;
+        font-weight: 600;
+        margin-top: 4rem;
+    }
 }
 </style>

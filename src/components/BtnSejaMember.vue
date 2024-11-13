@@ -40,11 +40,9 @@ import ModalAgendamento from './ModalAgendamento.vue';
 /* Smartphones pequenos */
 @media(max-width:575px){
     .cta-button {
-        /* font-size: 0.6rem; */
-        width: 8rem;
-        height: 1rem;
-        padding: 0px;
-        text-align: center;
+        max-width: 177px;
+        max-height: 40px;
+        margin-bottom: 1rem;
         border-radius: 4px;
     }
 }

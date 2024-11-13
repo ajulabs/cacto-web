@@ -46,7 +46,7 @@ const handleMenuClick = () => {
         max-width: 100vw;
         padding-top: 2rem;
         position: fixed;
-        z-index: 1000;
+        z-index: 100;
         background:#1A1A1A;
         box-shadow: 0px 4px 18px 0px #00000014;
     }
@@ -85,61 +85,102 @@ const handleMenuClick = () => {
     }
 
 
-/* Smartphones pequenos */
+/* Responsividade */
     @media(max-width:575px){
 
     .content {
-        height: 1.5rem;
+        max-width: 575vw;
+        max-height: 88px;
         padding: 0;
     }
 
     nav {
-        padding: 0;
+        max-width: 575px;
+        padding: 4rem;
+        justify-content: flex-start;
     }
 
     .logo {
-        width: 6rem;
-        padding: 0.3rem ;
-        margin-left: 1rem;
-        height: auto;
+        max-width: 130px;
+        max-height: 50px;
     }
 
     .logo img {
-        width: 50%;
-        height: auto;
-    }
-
-    .menu-ic {
-        display: block;
-        font-size: 0.5em;
+        max-width: 575px;
     }
 
     .ul {
-        position: fixed;
-        top: 0%;
-        left: 62%;
-        width: 50%;
-        height: 100%;
-        padding-left: 4%;
-        padding-top: 1rem;
-        background: #1A1A1A;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        transform:translateX(100%);
-        transition: 0.3s ease;
-    }
-
-    .ul-open {
-        transform: translateX(0);
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .ul li {
-        padding-top: 0.2rem;
-        margin-top: 1.3rem;
-        font-size: 0.5rem;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     }
 
-    }
+    /* Smartphones pequenos */
+    @media(max-width: 360px){
+
+.content {
+    max-width: 575vw;
+    max-height: 88px;
+    padding: 0;
+}
+
+nav {
+    max-width: 575px;
+    padding: 4rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    max-width: 107px;
+    max-height: 50px;
+    width: 6rem;
+    padding: 0.3rem ;
+    margin-left: 1rem;
+    height: auto;
+}
+
+.logo img {
+    width: 50%;
+    height: auto;
+}
+
+.menu-ic {
+    display: block;
+    font-size: 0.5em;
+}
+
+.ul {
+    position: fixed;
+    top: 0%;
+    left: 62%;
+    width: 50%;
+    height: 100%;
+    padding-left: 4%;
+    padding-top: 1rem;
+    background: #1A1A1A;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transform:translateX(100%);
+    transition: 0.3s ease;
+}
+
+.ul-open {
+    transform: translateX(0);
+}
+
+.ul li {
+    padding-top: 0.2rem;
+    margin-top: 1.3rem;
+    font-size: 0.5rem;
+}
+
+}
 
 </style>

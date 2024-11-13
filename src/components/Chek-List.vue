@@ -37,12 +37,17 @@ const props = defineProps({
 </template>
 
 <style scoped>
+.feature-content {
+    width: 100%;
+    max-width: 605.05px;
+}
 
 .feature-title {
     margin-top: 4rem;
 }
 .feature-description p {
-    width: 605px;
+    width: 100%;
+    max-width: 605px;
     height: 88px;
     word-wrap: break-word;
     margin-top: 1.5rem;
@@ -53,7 +58,8 @@ const props = defineProps({
     color: #A0A3AA;
 }
 .check-list {
-    width: 605px;
+    width: 100%;
+    max-width: 605px;
     height: 119px;
     display: flex;
     flex-direction: column;

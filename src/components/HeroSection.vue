@@ -25,40 +25,41 @@ import BtnSejaMember from './BtnSejaMember.vue';
         width: 100%;
         height: auto;
         max-width: 1440px;
-        /* position: relative; */
-        display: flex;
-        justify-content: center;
-        align-items:center;
+        position: relative;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items:center; */
         margin: 0 auto;
 }
     .imgOne {
         width: 100%;
-        height: 902px;
         max-width: 1440px;
-        position: relative;
+        /* position: relative; */
 }
     .imgOne img {
         width: 100%;
-        height: 902px;
         max-width: 1440px;
         /* margin-top: 7rem; */
+        position: relative;
         object-fit: cover;
 }
     .main-txt {
         position: absolute;
         width: 100%;
-        max-width:1238px ;
+        max-width:1440px ;
+        margin: 0 auto;
         bottom: 1.25rem;
         z-index: 2;
         text-align: center;
         color: #FFFFFF;
 }
     h1, h2 {
+        width: 100%;
+        max-width:1440px;
         margin: 0;
         font-family: 'Poppins',sans-serif;
 }
     h1 {
-        width: 100%;
         font-size: 4.8rem;
         font-weight: 700;
         line-height: 5.7rem;
@@ -83,6 +84,14 @@ import BtnSejaMember from './BtnSejaMember.vue';
             padding: 0 1rem;
         }
     }
+    @media (max-width: 1420px){
+        .container {
+            max-width: 1400px;
+        }
+        .imgOne img{
+            max-width: 1400px;
+        }
+    }
 
     @media (max-width: 1075px) {
         .container {
@@ -98,36 +107,18 @@ import BtnSejaMember from './BtnSejaMember.vue';
 
     /* Smartphones pequenos */
     @media(max-width:575px){
-        .imgOne {
-            max-height: 100vh;
-        }
-
-        .imgOne img {
-            height: auto;
-        }
 
         .main-txt {
-            width: 100vw;
-            bottom: 0.2rem;
-            transform: translate(-50%);
+            max-width: 575px;
         }
 
         .icon-logo {
             padding: 0;
-            height: 0.5rem;
         }
 
         h1 {
-            /* font-size: 0.7rem; */
-            line-height: 0.6rem;
-            text-align: center;
+            max-width: 575px;
             padding: 0px 0px 3px 0px;
-        }
-
-        h2 {
-            /* font-size: 0.45rem; */
-            padding: 0;
-            line-height: 0.7rem;
         }
     }
 

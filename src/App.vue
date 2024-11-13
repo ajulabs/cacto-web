@@ -5,7 +5,7 @@ import { RouterView, RouterLink } from 'vue-router';
 </script>
 
 <template>
-    <div class="mainLayout">
+    <div>
         <Header/>
         <router-view></router-view>
         <Footer/>
@@ -29,21 +29,30 @@ import { RouterView, RouterLink } from 'vue-router';
         font-size: 62.5%;
     }
 
-    /* media queries*/
-/* @media (max-width: 1440px) {
+@media (max-width:1420px){
     html {
-        font-size: 50%;
-        word-break: break-all;
+        font-size: 55%;
     }
 }
-@media (max-width: 1380px) {
+
+@media (max-width: 768px) {
     html {
         font-size: 45%;
     }
 }
-@media (max-width: 790px) {
+@media (max-width: 575px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media (max-width: 375px) {
     html {
         font-size: 30%;
     }
-} */
+}
+@media (max-width: 320px) {
+    html {
+        font-size: 30%;
+    }
+}
 </style>

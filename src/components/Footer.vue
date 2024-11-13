@@ -202,4 +202,5 @@ import Line from './Line.vue';
     align-items: center;
     margin: 4rem 0 8rem 0;
 }
+
 </style>

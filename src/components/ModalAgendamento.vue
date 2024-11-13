@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineEmits, onBeforeMount, onBeforeUnmount } from 'vue';
+import { ref, defineEmits} from 'vue';
 
 const emit = defineEmits();
     const selectedModality = ref('');
@@ -20,161 +20,246 @@ const emit = defineEmits();
 </script>
 
 <template>
-    <div v-if="isVisible" class="overlay">
-        <div class="container">
-            <div class="content-img">
+    <Teleport to="body">
+        <div v-if="isVisible" class="overlay">
+        <div class="box">
+            <div class="img-box">
                 <img src="/src/assets/Modal.png" alt="">
             </div>
-            <div class="container-form">
-                <div class="title">
-                    <h2> Agende sua experiência </h2>
-                    <button class="closeX" @click="closeModal"> X </button>
-                </div>
-                <div class="content-form">
-                    <span class="list">
-                        <label for="nome"> Nome <span class="listUl"> * </span> </label>
-                        <input type="text" name="nome" id="nome" placeholder="informe seu nome aqui">
-                    </span>
-                    <span class="list">
-                        <label for="whatsapp"> WhatsApp <span class="listUl"> * </span> </label>
-                        <input type="tel" name="" id="whatsapp" placeholder="(XX) XXXXX-XXXX">
-                    </span>
 
-                    <span class="list">
-                        <label for=""> Se você já decidiu a modalidade que deseja praticar, escolha abaixo. Caso ainda esteja indeciso, selecione "Ainda não sei".</label>
-                        <select id="modality" v-model="selectedModality">
-                            <option value="" disabled> Modalidade  </option>
-                            <option value="exclusive"> CACTO EXCLUSIVE </option>
-                            <option value="mmt"> CACTO MMT </option>
-                            <option value="run"> CACTO RUN </option>
-                            <option value="beach_tenis"> BEACH TENIS </option>
-                        </select>
-                    </span>
+            <div class="form-box">
+                    <div class="title">
+                        <h2> Agende sua experiência </h2>
+                        <button class="closeX" @click="closeModal"> X </button>
+                    </div>
 
-                    <span class="list">
-                        <label for=""> Selecione a unidade Cacto desejada</label>
-                        <select id="unit" v-model="selectedUnit">
-                            <option value="" disabled> Unidade </option>
-                            <option value=""> Cacto 13 de julho </option>
-                            <option value=""> Cacto Alamenda </option>
-                            <option value=""> Cacto 13 de julho </option>
-                        </select>
-                    </span>
+                    <form class="content-form">
+                        <span class="list">
+                            <label for="nome"> Nome <span class="listUl"> * </span> </label>
+                            <input type="text" name="nome" id="nome" placeholder="informe seu nome aqui">
+                        </span>
 
-                    <button class="btnConfirm" @click="confirm"> Confirmar </button>
+                        <span class="list">
+                            <label for="whatsapp"> WhatsApp <span class="listUl"> * </span> </label>
+                            <input type="tel" name="" id="whatsapp" placeholder="(XX) XXXXX-XXXX">
+                        </span>
+
+                        <span class="list">
+                            <label for=""> Se você já decidiu a modalidade que deseja praticar, escolha abaixo. Caso ainda esteja indeciso, selecione "Ainda não sei".</label>
+                            <select id="modality" v-model="selectedModality">
+                                <option value="" disabled> Modalidade  </option>
+                                <option value="exclusive"> CACTO EXCLUSIVE </option>
+                                <option value="mmt"> CACTO MMT </option>
+                                <option value="run"> CACTO RUN </option>
+                                <option value="beach_tenis"> BEACH TENIS </option>
+                            </select>
+                        </span>
+
+                        <span class="list">
+                            <label for=""> Selecione a unidade Cacto desejada</label>
+                            <select id="unit" v-model="selectedUnit">
+                                <option value="" disabled> Unidade </option>
+                                <option value=""> Cacto 13 de julho </option>
+                                <option value=""> Cacto Alamenda </option>
+                                <option value=""> Cacto 13 de julho </option>
+                            </select>
+                        </span>
+
+                        <span class="BTN-container">
+                            <button class="btnConfirm" @click="confirm"> Confirmar </button>
+                        </span>
+                    </form>
+
                 </div>
             </div>
         </div>
-    </div>
+    </Teleport>
 </template>
 
 <style scoped>
 
 .overlay {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
-    transform: translate(-25.4%, -60%);
-    z-index: 3000;
+    z-index: 200;
     overflow: hidden;
 }
-.container {
-    position: fixed;
-    width: 55rem;
-    height: 35rem;
-    background-color: #FFFFFF;
-    border-radius: 20px;
+.box {
+    width: 100%;
+    max-width: 920px;
     display: flex;
-    justify-content: space-evenly;
-    z-index: 3000;
-    animation: .3s anim-modal;
+    margin: 0 auto;
 }
-.content-img img {
-    width: 23.75rem;
-    height: 35rem;
+.img-box {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px;
+}
+.img-box img {
+    width: 100%;
+    max-width: 1440px;
     object-fit: cover;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    box-shadow: 0px 4px 18px 0px #00000014;
 }
-.list {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2.5rem 0 2.5rem;
+.form-box {
+    width: 100%;
+    padding: 20px;
+    background: #FFFFFF;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .title {
-    width: 28.75rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 .title h2 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
     color: #1c1c1e;
-    padding: 2rem 2rem 0 2.5rem;
+    padding: 1rem 0 2rem 0;
 }
 .closeX {
-    font-family: 'Poppins';
-    font-size: 1.2rem;
+    align-self: baseline;
+    font-family: 'poppins';
+    font-size: 2.4rem;
     border: none;
     background: none;
     color: #1c1c1e;
-    margin-right: .4rem;
     cursor: pointer;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 1rem 2.5rem 0 2.5rem;
+}
+.list label {
+    color: #1c1c1e;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.1rem;
 }
 .listUl {
     color: #FF6400;
 }
-label {
-    color: #1c1c1e;
-    font-family: 'Poppins';
-    font-size: 0.875rem;
-    font-weight: 600;
-    line-height: 1.313rem;
-}
-input, 
+input,
 select {
-    width: 26rem;
-    height: 3rem;
+    width: 100%;
+    max-width: 1400px;
     border: solid 1px #e5e5ea;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 1rem;
+    outline: none;
     margin-top: .5rem;
 }
+.BTN-container {
+    display: flex;
+    margin: 0 2.5rem;
+}
 .btnConfirm {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: .9rem;
-    line-height: 1.406rem;
-    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     cursor: pointer;
     color: #FFFFFF;
-    padding: .7rem;
-    margin: .8rem 2.5rem;
+    padding: 1.7rem;
+    margin-top: 2rem;
     border-radius: 10px;
     border: none;
     background-color: #FF6400;
 }
-.content-form {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-}
+
 @keyframes anim-modal {
     from{
         transform: translateY(100vh);
     }
     to{
         transform: translateY(0);
+    }
+}
+@media (max-width:930px) {
+    .img-box {
+        display: none;
+    }
+    .box {
+        width: 700px;
+    }
+    .form-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 740px) {
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem;
+        height: auto;
+    }
+}
+@media (max-width: 425px){
+    .form-box {
+        height: 620px;
+    }
+    .title h2, .closeX {
+        font-size: 4rem;
+        margin-top: .2rem;
+    }
+    .list input,
+    .list select {
+        font-size: 2rem;
+        padding: 2rem;
+    }
+    .list label {
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+    }
+    .btnConfirm {
+        padding: 2rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 375px){
+    .form-box {
+        height: 650px;
+    }
+    .title h2, .closeX {
+        font-size: 6rem;
+        margin-top: .4rem;
+        margin-bottom: 4rem;
+    }
+    .list input,
+    .list select {
+        font-size: 4rem;
+        padding: 2.5rem;
+    }
+    .list label {
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+    }
+    .btnConfirm {
+        padding: 6rem;
+        font-weight: 600;
+        font-size: 4.5rem;
     }
 }
 </style>
