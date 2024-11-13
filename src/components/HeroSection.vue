@@ -26,9 +26,9 @@ import BtnSejaMember from './BtnSejaMember.vue';
         height: auto;
         max-width: 1440px;
         position: relative;
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items:center; */
+        display: flex;
+        justify-content: center;
+        align-items:center;
         margin: 0 auto;
 }
     .imgOne {
