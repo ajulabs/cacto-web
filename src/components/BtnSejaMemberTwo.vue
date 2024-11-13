@@ -30,13 +30,13 @@ const navigateToPage = () => {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.894rem;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    width: 18.141rem;
-    height: 5.069rem;
+    width: 290.26px;
+    height: 87.1px;
     box-shadow: 10.82px 10.82px 0px 0px #FFFFFF;
-    margin-top: 1.5rem;
+    margin-top: 2.8rem;
 }
 .join-button img {
     margin-left: 1.5rem;
@@ -46,5 +46,4 @@ const navigateToPage = () => {
 .join-button:hover {
     background-color: #e65500;
 }
-
 </style>

@@ -6,16 +6,26 @@ import { RouterView, RouterLink } from 'vue-router';
 
 <template>
     <div class="mainLayout">
-        <Header class="header"/>
+        <Header/>
         <router-view></router-view>
         <Footer/>
     </div>
 </template>
 
-<style scoped>
-    .header {
-        position: fixed;
-        z-index: 1000;
-    }
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+    :root {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+    }
+    html {
+        font-size: 62.5%;
+    }
 </style>
