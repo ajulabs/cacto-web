@@ -74,4 +74,16 @@ const props = defineProps({
         max-width: 190px;
     }
 }
+@media (max-width: 881px) {
+    .custom-button {
+        height: 45px;
+        max-width: 180px;
+    }
+}
+@media (max-width: 320px) {
+    .custom-button {
+        height: 35px;
+        max-width: 130px;
+    }
+}
 </style>

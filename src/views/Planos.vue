@@ -200,5 +200,22 @@ const selectCard = (cardId) => {
     background-color: #FF6400;
 }
 
+@media (max-width: 1440px) {
+    .containerPlan {
+        padding: 0 4rem;
+    }
+}
+
+/* Todo revisar responsividade */
+
+@media (max-width:463px){
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
 
 </style>

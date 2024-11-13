@@ -29,7 +29,9 @@ import ModalAgendamento from './ModalAgendamento.vue';
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     width: 50%;
+    max-width: 520px;
     height: 25%;
+    max-height: 54px;
     border-radius: 10px;
     padding: 16px 18px 16px 18px;
     gap: 10px;
@@ -38,12 +40,30 @@ import ModalAgendamento from './ModalAgendamento.vue';
     background-color: #e65500;
 }
 /* Smartphones pequenos */
-@media(max-width:575px){
+@media(max-width: 590px){
     .cta-button {
-        max-width: 177px;
-        max-height: 40px;
-        margin-bottom: 1rem;
-        border-radius: 4px;
+        max-width: 200px;
+        max-height: 20px;
+        /* padding: 16px 0 16px 0; */
+        /* margin-bottom: 1.5rem; */
+        border-radius: 6px;
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .div_ctaBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 320px) {
+    .cta-button {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
     }
 }
 </style>

@@ -25,7 +25,7 @@ const navigateToPage = () => {
 .join-button {
     width: 100%;
     max-width: 290.26px;
-    height: 100%;
+    height: 87px;
     max-height: 87.1px;
     display: inline-flex;
     align-items: center;

@@ -150,8 +150,8 @@ p{
 .play-button::before {
     content: '';
     position: absolute;
-    left: 40%;
-    top: 35%;
+    left: 35%;
+    top: 30%;
     width: 0;
     height: 0;
     border-left: 25px solid #171717;
@@ -197,8 +197,8 @@ p{
 .play-buttonRigth::before {
     content: '';
     position: absolute;
-    left: 40%;
-    top: 35%;
+    left: 35%;
+    top: 30%;
     width: 0;
     height: 0;
     border-left: 25px solid #171717;

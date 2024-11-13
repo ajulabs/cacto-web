@@ -48,16 +48,19 @@ import Button from './Button.vue';
 
 .Card-wrapper {
     width: 100%;
-    max-width: 1110px;
+    max-width: 1433px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0 auto;
+    padding: 0 8px 0 8px;
     gap: 30px;
 }
 .card-container {
     width: 100%;
     max-width: 540px;
-    height: 175px;
+    height: 100%;
+    max-height: 175px;
     background-color: #FFF5E0;
     border-radius: 0.9rem;
     padding: 2.5rem;
@@ -86,25 +89,48 @@ import Button from './Button.vue';
     height: 100px;
     background-color:#D9D9D9 ;
     border-radius: 0.625rem;
+    margin-bottom: 1rem;
 }
 .BTN-Footer {
     width: 100%;
     max-width: 250px;
-    height: 54px;
+    height: 100%;
+    max-height: 54px;
     z-index: 2;
     margin-left: 10rem;
     margin-top: 1rem;
     padding: 16px 18px 16px 18px;
 }
 
-@media (max-width: 1440px) {
+
+@media (max-width: 882px) {
+    .BTN-Footer {
+        padding: 0;
+    }
     .card-container {
-        max-width: 450px;
+        max-height: 130px;
+    }
+    .BG {
+        max-height: 80px;
+        max-width: 80px;
     }
 }
-@media (max-width: 1385px) {
-    .card-container {
-        max-width: 410px;
+@media (max-width: 668px) {
+    .Card-wrapper {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .BTN-Footer {
+        margin-top: .5rem;
+    }
+
+}
+@media (max-width: 515px) {
+    .BTN-Footer {
+        max-width: 120px;
+        margin-top: 1rem;
+        margin-left: 2rem;
     }
 }
+
 </style>

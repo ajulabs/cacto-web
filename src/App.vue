@@ -31,13 +31,77 @@ import { RouterView, RouterLink } from 'vue-router';
 
 @media (max-width:1420px){
     html {
-        font-size: 55%;
+        font-size: 58%;
     }
 }
-
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    html {
+        font-size: 58%;
+    }
+}
+@media (max-width: 970px ){
+    html {
+        font-size: 54%;
+    }
+}
+@media (max-width: 963px ) {
+    html {
+        font-size: 51%;
+    }
+}
+@media (max-width: 909px ) {
+    html {
+        font-size: 49%;
+    }
+}
+@media (max-width: 890px) {
+    html {
+        font-size: 47%;
+    }
+}
+@media (max-width: 873px ) {
     html {
         font-size: 45%;
+    }
+}
+@media (max-width: 855px ) {
+    html {
+        font-size: 45%;
+    }
+}
+@media (max-width: 802px ) {
+    html {
+        font-size: 44%;
+    }
+}
+@media (max-width: 784px ) {
+    html {
+        font-size: 43%;
+    }
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 41%;
+    }
+}
+@media (max-width: 730px ) {
+    html {
+        font-size: 40%;
+    }
+}
+@media (max-width: 713px ) {
+    html {
+        font-size: 45%;
+    }
+}
+@media (max-width: 623px ) {
+    html {
+        font-size: 44%;
+    }
+}
+@media (max-width: 606px ) {
+    html {
+        font-size: 38%;
     }
 }
 @media (max-width: 575px) {
@@ -45,14 +109,26 @@ import { RouterView, RouterLink } from 'vue-router';
         font-size: 40%;
     }
 }
-@media (max-width: 375px) {
+
+@media (max-width: 515px ) {
     html {
-        font-size: 30%;
+        font-size: 27%;
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 498px ) {
     html {
-        font-size: 30%;
+        font-size: 34%;
+    }
+}
+@media (max-width: 462px ) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 357px) {
+    html {
+        font-size: 37%;
     }
 }
 </style>
