@@ -58,7 +58,7 @@ import Service from '@/components/Service.vue';
 <style scoped>
 
 .DivTitle {
-    margin-top: 2rem;
+    margin-top: 2.3rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;

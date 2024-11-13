@@ -58,11 +58,14 @@ const props = defineProps({
 
 <style scoped>
 .cardModal-container {
-    width: 82rem;
+    width: 100%;
+    max-width: 82rem;
     margin: 0 auto;
     margin-top: 6rem;
 }
 .cardModal-content {
+    width: 100%;
+    max-width: 1300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -73,7 +76,8 @@ const props = defineProps({
     align-items: center;
 }
 .txt-Modal {
-    width: 29.17rem;
+    width: 100%;
+    max-width: 29.17rem;
 }
 .lineVertical {
     padding-left: 4rem;

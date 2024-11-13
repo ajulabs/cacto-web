@@ -34,12 +34,10 @@ import BtnSejaMember from './BtnSejaMember.vue';
     .imgOne {
         width: 100%;
         max-width: 1440px;
-        /* position: relative; */
 }
     .imgOne img {
         width: 100%;
         max-width: 1440px;
-        /* margin-top: 7rem; */
         position: relative;
         object-fit: cover;
 }
@@ -48,7 +46,7 @@ import BtnSejaMember from './BtnSejaMember.vue';
         width: 100%;
         max-width:1440px ;
         margin: 0 auto;
-        bottom: 1.25rem;
+        bottom: 5.25rem;
         z-index: 2;
         text-align: center;
         color: #FFFFFF;
@@ -84,12 +82,25 @@ import BtnSejaMember from './BtnSejaMember.vue';
             padding: 0 1rem;
         }
     }
+
+    @media (max-width:1440px) {
+        .main-txt {
+            bottom: 14.25rem;
+        }
+    }
+
     @media (max-width: 1420px){
         .container {
-            max-width: 1400px;
+            max-width: 1420px;
         }
         .imgOne img{
             max-width: 1400px;
+        }
+    }
+
+    @media (max-width: 1400px) {
+        .main-txt {
+            bottom: 10rem;
         }
     }
 
@@ -103,13 +114,29 @@ import BtnSejaMember from './BtnSejaMember.vue';
         .imgOne img {
             max-width: 100vw;
         }
+        .main-txt {
+            bottom: 8rem;
+        }
     }
 
-    /* Smartphones pequenos */
+    @media (max-width: 1024px ) {
+        .main-txt {
+            bottom: 6rem;
+        }
+    }
+
+    @media (max-width:970px) {
+        .main-txt {
+            bottom: 4rem;
+            padding: 0 4rem;
+        }
+    }
+
     @media(max-width:575px){
 
         .main-txt {
             max-width: 575px;
+            bottom: 1rem;
         }
 
         .icon-logo {
@@ -119,6 +146,48 @@ import BtnSejaMember from './BtnSejaMember.vue';
         h1 {
             max-width: 575px;
             padding: 0px 0px 3px 0px;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .imgOne {
+            margin-top: 4rem;
+        }
+        h1 {
+            font-size: 2.7rem;
+            line-height: 2.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .imgOne {
+            margin-top: 6rem;
+        }
+        h1 {
+            font-size: 2.3rem;
+            line-height: 2rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+            line-height: 2rem;
+        }
+    }
+
+    @media (max-width: 320px) {
+        .imgOne {
+            margin-top: 8rem;
+        }
+        h1 {
+            font-size: 2.1rem;
+            line-height: 2.1rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+            line-height: 2.1rem;
         }
     }
 

@@ -112,7 +112,7 @@ const handleMenuClick = () => {
 
     nav {
         max-width: 575px;
-        padding: 2rem;
+        padding: 1rem;
         justify-content: flex-start;
     }
 
@@ -220,7 +220,7 @@ const handleMenuClick = () => {
     
     @media (max-width: 384px) {
         .menu-ic {
-            margin-right: 4rem;
+            margin-right: 8rem;
             margin-left: 2rem;
         }
     }

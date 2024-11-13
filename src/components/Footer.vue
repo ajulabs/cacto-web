@@ -34,7 +34,7 @@ import Line from './Line.vue';
                 <div class="contacto-content">
                     <h1>CONTATO</h1>
                     <div class="list-footer-contacto">
-                        <div class="itens-footer">
+                        <div class="itens-list-footer">
                             <div class="contacto-name">
                                 <div class="background"></div>
                             </div>
@@ -72,12 +72,13 @@ import Line from './Line.vue';
             <footer class="footer-copy">
                 <p>© 2024 Todos os direitos reservados </p>
             </footer>
-        </div>
+        </div> 
     </div>
 </template>
 
 <style scoped>
 .footer-container {
+    height: 850px;
     margin-top: 4rem;
 }
 .contacto-local {
@@ -154,7 +155,16 @@ import Line from './Line.vue';
     margin: 1.5rem 0;
     gap: 2rem;
 }
-.itens-footer h3 {
+.itens-list-footer {
+    width: 100%;
+    max-width: 255px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+.itens-footer h3, .itens-list-footer h3 {
     width: 105px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -163,7 +173,7 @@ import Line from './Line.vue';
     color: #FFFFFF;
     opacity: 50%;
 }
-.itens-footer h2 {
+.itens-footer h2, .itens-list-footer h2 {
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 1.4rem;
@@ -201,6 +211,26 @@ import Line from './Line.vue';
     justify-content: space-evenly;
     align-items: center;
     margin: 4rem 0 8rem 0;
+}
+
+@media (max-width: 560px) {
+    .footer-container {
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 460px ){
+    .content-sobre {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 666px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 265px) {
+    
 }
 
 </style>
