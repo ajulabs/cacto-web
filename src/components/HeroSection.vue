@@ -22,11 +22,14 @@ import BtnSejaMember from './BtnSejaMember.vue';
 <style scoped>
 
     .container {
-        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: 1440px;
+        /* position: relative; */
         display: flex;
         justify-content: center;
         align-items:center;
-        width: 100%;
+        margin: 0 auto;
 }
     .imgOne {
         width: 100%;
@@ -38,14 +41,15 @@ import BtnSejaMember from './BtnSejaMember.vue';
         width: 100%;
         height: 902px;
         max-width: 1440px;
-        margin-top: 7rem;
+        /* margin-top: 7rem; */
         object-fit: cover;
 }
     .main-txt {
         position: absolute;
+        width: 100%;
+        max-width:1238px ;
         bottom: 1.25rem;
-        left: 50%;
-        transform: translate(-50%);
+        z-index: 2;
         text-align: center;
         color: #FFFFFF;
 }
@@ -54,11 +58,11 @@ import BtnSejaMember from './BtnSejaMember.vue';
         font-family: 'Poppins',sans-serif;
 }
     h1 {
-        width: 1038px;
+        width: 100%;
         font-size: 4.8rem;
         font-weight: 700;
         line-height: 5.7rem;
-        text-align: left;
+        text-align: center;
 }
     h2 {
         font-family: Poppins;
@@ -73,7 +77,23 @@ import BtnSejaMember from './BtnSejaMember.vue';
         height: 2.1rem;
         width: auto;
 }
-    @media(max-width:1440px){
+    @media(max-width:1475px){
+        .container {
+            max-width: 1400px;
+            padding: 0 1rem;
+        }
+    }
+
+    @media (max-width: 1075px) {
+        .container {
+            max-width: 100%;
+        }
+        .imgOne {
+            max-width: 100vw;
+        }
+        .imgOne img {
+            max-width: 100vw;
+        }
     }
 
     /* Smartphones pequenos */
@@ -110,4 +130,5 @@ import BtnSejaMember from './BtnSejaMember.vue';
             line-height: 0.7rem;
         }
     }
+
 </style> 

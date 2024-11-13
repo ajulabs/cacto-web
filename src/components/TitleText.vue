@@ -51,6 +51,19 @@ const props = defineProps({
     background-color: #ff6600;
 }
 .text-image-layout p {
+    overflow-wrap: break-word;
     margin-top: 1rem;
 }
+
+@media (max-width:1440px) {
+    .text-image-layout p {
+        overflow-wrap: break-word;
+    }
+    .text-image-layout {
+        width: 600px;
+        height: 575px;
+    }
+}
+
+
 </style>

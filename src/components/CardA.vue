@@ -96,4 +96,15 @@ import Button from './Button.vue';
     margin-top: 1rem;
     padding: 16px 18px 16px 18px;
 }
+
+@media (max-width: 1440px) {
+    .card-container {
+        max-width: 450px;
+    }
+}
+@media (max-width: 1385px) {
+    .card-container {
+        max-width: 410px;
+    }
+}
 </style>

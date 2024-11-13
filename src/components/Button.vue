@@ -68,4 +68,10 @@ const props = defineProps({
     line-height: 2.25rem;
     text-align: center;
 }
+
+@media (max-width: 1400px) {
+    .custom-button{
+        max-width: 190px;
+    }
+}
 </style>

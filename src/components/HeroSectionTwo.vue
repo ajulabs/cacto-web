@@ -10,7 +10,7 @@ import TitleText from './TitleText.vue';
     <section class="hero-section">
         <div class="hero-content">
             <div class="text-container">
-                <div class="text-content">
+                <div class="text-content txt-content-rigth">
                     <TitleText
                         title="Lorem Ipsun"
                         description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
@@ -18,7 +18,7 @@ import TitleText from './TitleText.vue';
                     <BtnSejaMemberTwo/>
                 </div>
             </div>
-            <div class="media-container">
+            <div class="media-container skipping-rope">
                 <video src="/src/assets/video1.mp4" autoplay muted loop playsinline></video>
             </div>
         </div>
@@ -54,8 +54,8 @@ import TitleText from './TitleText.vue';
         </div>
 
         <div class="hero-features">
-            <div class="feature-group-one">
-                <div class="feature-element-one">
+            <div class="feature-group-one ">
+                <div class="feature-element-one lifting weight">
                     <div class="feature-content">
                         <div class="gradient-overlay"></div>
                         <div class="image-block">
@@ -82,7 +82,7 @@ import TitleText from './TitleText.vue';
                         description="Desenvolva o prazer de se exercitar através de um método embasado em estudos atualizados nas áreas de educação física, nutrição, fisioterapia e psicologia."
                     />
                 </div>
-                <div class="feature-element-two">
+                <div class="feature-element-two squat">
                     <div class="feature-content">
                         <div class="gradient-overlay-B"></div>
                         <div class="image-block-B">
@@ -115,7 +115,7 @@ import TitleText from './TitleText.vue';
 
         <div class="hero-content">
             <div class="text-container">
-                <div class="text-content">
+                <div class="text-content txt-content-left">
                     <TitleText
                         title="Lorem Ipsun"
                         description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
@@ -156,21 +156,26 @@ import TitleText from './TitleText.vue';
     </section>
 </template>
 
-<style scoped>
+<style scoped> 
 
 /* Hero Section */
 .hero-section {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
+    margin: 0 auto;
 }
 .hero-content {
     width: 100%;
+    height: auto;
     max-width: 1440px;
+    margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 .hero-stats {
@@ -187,29 +192,34 @@ import TitleText from './TitleText.vue';
     border-color: #3A3B3E;
 }
 .media-container {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 .media-container video {
-    width: 720px;
-    height: 902px;
+    width: 100%;
+    height: 100px;
+    max-width: 720px;
     object-fit: cover;
-    padding: 4rem 0 ;
+    /* margin-top: 10rem; */
+    /* padding: 2rem 0 ; */
 }
 .text-container {
     width: 100%;
     max-width: 631px;
-    margin-right: 0rem;
 }
 .text-content {
+    width: 100%;
+    height: 598px;
+    max-width: 631px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: #FFFFFF;
     line-height: 2rem;
-    width: 39rem;
 }
 .text-content h1 {
     position: relative;
@@ -294,23 +304,31 @@ import TitleText from './TitleText.vue';
     max-width: 624.57px;
     margin-bottom: 4rem;
 }
+.feature-content {
+    position: relative;
+    width: 100%;
+    max-width: 624.57px;
+    height: 503.56px;
+}
 .gradient-overlay {
     position: absolute;
-    margin-top: 10%;
     border-radius: 1.708rem;
     background: linear-gradient(40.04deg, #FF6400 0%, #FFC7A4 100%);
-    opacity: 0.043rem;
-    width: 624.57px;
+    width: 100%;
     height: 312.28px;
+    max-width: 624.57px;
+    top: 191.27px;
+    opacity: 68%;
     z-index: 2;
 }
 .gradient-overlay-B {
     position: absolute;
     border-radius: 1.708rem;
     background: linear-gradient(40.04deg, #FF6400 0%, #FFC7A4 100%);
-    opacity: 0.043rem;
-    width: 624.57px;
+    width: 100%;
+    max-width: 624.57px;
     height: 312.28px;
+    opacity: 68%;
     z-index: 2;
 }
 .image-block {
@@ -381,6 +399,11 @@ import TitleText from './TitleText.vue';
 .media-container {
     margin: 0 2rem 2rem 0;
 }
+.media-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 /* Hero 5 */
 .Hero-element-five {
     width: 100%;
@@ -393,7 +416,6 @@ import TitleText from './TitleText.vue';
     font-weight: 700;
     line-height: 4rem;
     color: #FFFFFF;
-    padding: 0 .6rem;
 }
 .Hero-element-five P {
     display: flex;
@@ -407,8 +429,10 @@ import TitleText from './TitleText.vue';
 }
 .five-txt-top {
     width: 100%;
+    /* height: 277px; */
+    /* max-width: 1440px; */
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
 }
 .five-txt-top p {
     font-family: "DM Sans";
@@ -417,35 +441,34 @@ import TitleText from './TitleText.vue';
     line-height: 1.4rem;
 }
 .iconIMG img{
-    width: 20px;
-    padding: 6px 0 8px 8px;
-    margin-left: 2rem;
+    width: 10px;
+    margin: 2rem;
 }
 .videoFHD {
     width: 100%;
-    height: 664px;
     max-width: 1440px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 .videoFHD video {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 /* Hero 6 */
 .Hero-element-six{
-    width: 1440px;
+    width: 100%;
     height: 902px;
-    max-width: 1440px;
+    margin: 0 auto;
+    max-width: 1400px;
     position: relative;
     margin-top: 2rem;
 }
 .Hero-element-six img {
-    width: 1440px;
+    width: 100%;
     height: 902px;
-    max-width: 1440px;
     object-fit: cover;
 }
 .content-six-txt {
@@ -484,5 +507,30 @@ import TitleText from './TitleText.vue';
     bottom: 10rem;
     left: 11rem;
     z-index: 3;
+}
+
+/* media queries*/
+@media (max-width: 1440px) {
+    .media-container video {
+        width: 100%;
+        margin-top: 8rem;
+    }
+    .text-content {
+        height: 498px;
+    }
+    .videoFHD video {
+        width: 80%;
+        height: auto;
+    }
+    .Hero-element-five h2 {
+        padding: 0 0 1rem 2rem;
+    }
+}
+
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1392px) {
+    
 }
 </style>
