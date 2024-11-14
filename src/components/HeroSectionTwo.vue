@@ -104,7 +104,7 @@ import TitleText from './TitleText.vue';
         </div>
 
 
-        <div class="hero-content">
+        <div class="hero-content bloco-two">
             <div class="media-container">
                 <video src="/src/assets/video2.mp4" autoplay muted loop playsinline></video>
             </div>
@@ -167,7 +167,6 @@ import TitleText from './TitleText.vue';
 .hero-section {
     width: 100%;
     max-width: 1440px;
-    /* height: auto; */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -338,13 +337,14 @@ import TitleText from './TitleText.vue';
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-left: 6%; */
     bottom: 12px;
 }
 .image-block-B {
     position: relative;
     display: flex;
-    margin-left: 6%;
+    justify-content: center;
+    align-items: center;
+    bottom: 12px;
 }
 .image-block img {
     width: 100%;
@@ -510,6 +510,10 @@ import TitleText from './TitleText.vue';
 }
 .span-BTN-ELSIX {
     position: absolute;
+    width: 100%;
+    max-width: 290px;
+    height: 100%;
+    max-height: 87px;
     top: 55rem;
     bottom: 10rem;
     left: 11rem;
@@ -517,71 +521,72 @@ import TitleText from './TitleText.vue';
 }
 
 /* media queries*/
-@media (max-width: 1457px) {
-    .txt-content-rigth{
-        padding-left: 2rem;
-    }
-
-}
 
 @media (max-width: 1440px) {
-    .media-container video {
-        width: 100%;
-        margin-top: 8rem;
-    }
-    .text-content {
-        height: 260px;
-    }
-    .videoFHD video {
-        width: 80%;
-        height: auto;
-    }
-    .Hero-element-five h2 {
-        padding: 0 0 1rem 2rem;
-    }
+    
 }
 
-@media (max-width: 768px) {
-    .hero-content {
-        align-items: flex-start;
-    }
-    .text-container {
-        padding-top: 8rem;
-    }
-}
-@media (max-width: 575px) {
+@media (max-width: 1100px) {
     .hero-section {
-        max-width: 574px;
+        max-width: 1100px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .bloco-two {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
     .hero-content {
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 8rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .Hero-element-five {
+        max-width: 1100px;
+        padding: 0 1rem;
+    }
+    .hero-stats{
+        padding: 2rem 8rem;
     }
     .feature-group-one {
-        flex-direction: column;
+        max-width: 1100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
     }
     .feature-group-two {
-        flex-direction: column;
+        max-width: 1100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 2rem;
     }
-    .feature-content {
-        max-width: 476px;
-        padding: 0 2rem;
-    }
-    .feature-card {
-        max-width: 190px;
-        max-height: 60px;
-        left: 356px;
-        bottom: 300px;
-        border-radius: 5px;
+    .Hero-element-six {
+        max-width: 1100px;
+        padding: 0 1rem;
     }
     .content-six-txt {
-        max-width: 182.56px;
+        max-width: 610px;
+        left: 6rem;
+        height: 520px;
+        padding: 4rem;
     }
-    .gradient-overlay {
-        max-width: 450px;
-        top: 93.37px;
+    .content-six-txt h1 {
+        padding-top: 2rem;
+        font-size: 4rem;
     }
-    .image-block img {
-        max-width: 500px;
+    .content-six-txt p {
+        font-size: 2.2rem;
+        line-height: 4rem;
     }
+    .span-BTN-ELSIX{
+        max-width: 230px;
+        height: 50px;
+        top: 40rem;
+        left: 11rem;
+    }
+
 }
 </style>
