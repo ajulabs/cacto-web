@@ -29,7 +29,7 @@ import { RouterView, RouterLink } from 'vue-router';
         font-size: 62.5%;
     }
 
-@media (max-width:1420px){
+/* @media (max-width:1420px){
     html {
         font-size: 58%;
     }
@@ -130,5 +130,5 @@ import { RouterView, RouterLink } from 'vue-router';
     html {
         font-size: 37%;
     }
-}
+} */
 </style>

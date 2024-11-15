@@ -24,8 +24,8 @@ const navigateToPage = () => {
 
 .join-button {
     width: 100%;
-    max-width: 290.26px;
-    height: 87px;
+    max-width: 296px;
+    height: 100%;
     max-height: 87.1px;
     display: inline-flex;
     align-items: center;
@@ -49,12 +49,16 @@ const navigateToPage = () => {
     background-color: #e65500;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 1100px) {
     .join-button{
-        max-width: 180px;
-        max-height: 60px;
+        max-width: 230px;
+        max-height: 80px;
         font-weight: 600;
-        margin-top: 4rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .join-button img {
+        width: 40px;
     }
 }
 </style>
