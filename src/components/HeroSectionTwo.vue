@@ -224,7 +224,6 @@ import TitleText from './TitleText.vue';
     left: 0;
     margin-right: 2rem;
 }
-<<<<<<< Updated upstream
 .text-content {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -233,9 +232,7 @@ import TitleText from './TitleText.vue';
     line-height: 2rem;
     width: 39.438rem;
 }
-=======
 
->>>>>>> Stashed changes
 .text-content h1 {
     position: relative;
     font-size: 3rem;
@@ -396,14 +393,11 @@ import TitleText from './TitleText.vue';
 .media-container {
     margin: 0 2rem 2rem 0;
 }
-<<<<<<< Updated upstream
-=======
 .media-container video {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
->>>>>>> Stashed changes
 
 /* Hero 5 */
 .Hero-element-five h2 {
@@ -424,11 +418,9 @@ import TitleText from './TitleText.vue';
     
 }
 .five-txt-top {
-<<<<<<< Updated upstream
     display: flex;
     gap: 40px;
 
-=======
     width: 100%;
     display: flex;
 }
@@ -437,7 +429,6 @@ import TitleText from './TitleText.vue';
     font-weight: 700;
     font-size: 1.1rem;
     line-height: 1.4rem;
->>>>>>> Stashed changes
 }
 .iconIMG img{
     width: 20px;

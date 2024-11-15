@@ -58,12 +58,9 @@ const props = defineProps({
 
 <style scoped>
 .cardModal-container {
-<<<<<<< Updated upstream
     width: 82rem;
-=======
     width: 100%;
     max-width: 1360px;
->>>>>>> Stashed changes
     margin: 0 auto;
     margin-top: 6rem;
     display: flex;
@@ -71,11 +68,8 @@ const props = defineProps({
 
 }
 .cardModal-content {
-<<<<<<< Updated upstream
-=======
     width: 100%;
     max-width: 1360px;
->>>>>>> Stashed changes
     display: flex;
     justify-content: space-evenly;
     align-items: center;
