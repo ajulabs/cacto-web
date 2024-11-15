@@ -15,7 +15,9 @@ import TitleText from './TitleText.vue';
                         title="Lorem Ipsun"
                         description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
                     />
-                    <BtnSejaMemberTwo/>
+                    <span class="Btn">
+                        <BtnSejaMemberTwo/>
+                    </span>
                 </div>
             </div>
             <div class="media-container skipping-rope">
@@ -213,11 +215,7 @@ import TitleText from './TitleText.vue';
     width: 100%;
     max-width: 631px;
 }
-.text-content {
-    width: 100%;
-    height: 598px;
-    max-width: 631px;
-}
+
 .text-content h1 {
     position: relative;
     font-size: 3rem;
@@ -411,6 +409,7 @@ import TitleText from './TitleText.vue';
     height: auto;
     object-fit: cover;
 }
+
 /* Hero 5 */
 .Hero-element-five {
     width: 100%;
@@ -436,10 +435,7 @@ import TitleText from './TitleText.vue';
 }
 .five-txt-top {
     width: 100%;
-    /* height: 277px; */
-    /* max-width: 1440px; */
     display: flex;
-    /* gap: 30px; */
 }
 .five-txt-top p {
     font-family: "DM Sans";
@@ -464,6 +460,7 @@ import TitleText from './TitleText.vue';
     height: auto;
     object-fit: cover;
 }
+
 /* Hero 6 */
 .Hero-element-six{
     width: 100%;
