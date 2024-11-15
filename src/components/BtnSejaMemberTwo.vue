@@ -14,7 +14,19 @@
 
 <style scoped>
 
+.text-content {
+    width: 100%; 
+    max-width: 631px; 
+    height: 87px;
+} 
+
 .join-button {
+<<<<<<< Updated upstream
+=======
+    width: 100%;
+    max-width: 296px;
+    height: 100%;
+>>>>>>> Stashed changes
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -39,4 +51,24 @@
     background-color: #e65500;
 }
 
+<<<<<<< Updated upstream
 </style>
+=======
+@media (max-width: 1100px) {
+    .join-button{
+        max-width: 230px;
+        max-height: 80px;
+        font-weight: 600;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .join-button img {
+        width: 40px;
+    }
+}
+</style>
+
+width: 100%;
+    height: 598px;
+    max-width: 631px;
+>>>>>>> Stashed changes

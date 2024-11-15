@@ -22,16 +22,15 @@
 .modal-container {
     position: relative;
     width: 100%;
-    max-width: 83rem;
+    max-width: 1316px;
     margin: 0 auto;
     padding: 0 2.5rem;
 }
 
 .modal-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
 }
 
 .modal-content h1 {
@@ -44,9 +43,8 @@
 
 .itens {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    gap: 4.5rem;
+    gap: 5rem;
 }
 
 .itens h2 {
