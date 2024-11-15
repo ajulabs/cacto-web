@@ -59,13 +59,16 @@ const props = defineProps({
 <style scoped>
 .cardModal-container {
     width: 100%;
-    max-width: 82rem;
+    max-width: 1360px;
     margin: 0 auto;
     margin-top: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+
 }
 .cardModal-content {
     width: 100%;
-    max-width: 1300px;
+    max-width: 1360px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -82,7 +85,7 @@ const props = defineProps({
 .lineVertical {
     padding-left: 4rem;
     padding-right: 4rem;
-    display: flex;
+    /* display: flex; */
     opacity: 7%;
 }
 .arrow-reverse img {
@@ -91,7 +94,7 @@ const props = defineProps({
 .txt-Modal h1{
     font-family: 'Sofia sans';
     font-weight: 900;
-    font-size: 2.25rem;
+    font-size: 3.6rem;
     line-height: 2.5rem;
     margin-bottom: 1rem;
     color: #FFFFFF;
@@ -99,12 +102,13 @@ const props = defineProps({
 .txt-Modal p  {
     font-family: 'Poppins' sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
-    line-height: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.3rem;
     color: #FFFFFF;
 }
 .txt-Modal img {
-    width: 5.834rem;
+    width: 100%;
+    max-width: 6rem;
     height: 3.2rem;
     border: none;
     cursor: pointer;

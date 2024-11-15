@@ -22,11 +22,16 @@ const navigateToPage = () => {
 
 <style scoped>
 
+.text-content {
+    width: 100%; 
+    max-width: 631px; 
+    height: 87px;
+} 
+
 .join-button {
     width: 100%;
     max-width: 296px;
     height: 100%;
-    max-height: 87.1px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -62,3 +67,7 @@ const navigateToPage = () => {
     }
 }
 </style>
+
+width: 100%;
+    height: 598px;
+    max-width: 631px;

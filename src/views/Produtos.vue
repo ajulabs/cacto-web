@@ -13,12 +13,15 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
         <div class="Produc-Section">
             <div class="text-container">
                 <div class="text-content">
+                    <span class="text-content-p"> <p> Lorem ipsum dolor </p></span>
                     <TitleTextTwo
-                        title="Lorem Ipsun"
+                        title="Lorem Ipsun Dolor"
                         description="eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit"
                     />
+                    <div class="btn">
+                        <BtnSejaMemberTwo/>
+                    </div>
                 </div>
-                <BtnSejaMemberTwo/>
             </div>
             <div class="media-container">
                 <div class="media-container-txt">
@@ -68,11 +71,14 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
 
 <style scoped>
 .Produc-Section {
+    width: 100%;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     padding-top: 4rem;
+    margin: 0 auto;
 }
 .media-container {
     position: relative;
@@ -86,7 +92,8 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
 .media-container-txt {
     position: absolute;
     z-index: 2;
-    width: 10.184rem;
+    width: 100%;
+    max-width: 10.184rem;
     height: 8.012rem;
     background-color: #ff6400;
     padding: 0.724rem 0.25rem 0.724rem 0.724rem;
@@ -101,24 +108,26 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
     font-weight: 600;
     line-height: 2.25rem;
 }
+.menu-container {
+    padding: 4rem 0;
+}
 .text-container {
+    width: 100%;
+    max-width: 694px;
+    padding: 0 2rem;
     left: 0;
     margin-right: 2rem;
 }
-.text-content {
+.text-content-p p{
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    color: #FFFFFF;
-    line-height: 2rem;
-    width: 39.438rem;
+    color: #ff6400;
+    font-size: 2.3rem;
+    padding: 0 1rem;
+    font-weight: 100;
+    line-height: 6rem;
 }
-.text-container h3 {
-    font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 1.2rem;
-    line-height: 2.25rem;
-    margin-bottom: .8rem;
-    /* color: #ff6400; */
+.btn {
+    padding-left: 1rem;
 }
+
 </style>
