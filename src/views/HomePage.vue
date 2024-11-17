@@ -8,7 +8,7 @@ import HeroSectionTwo from '@/components/HeroSectionTwo.vue';
 
 <template>
     <div>
-        <!-- <HeroSection/> -->
+        <HeroSection/>
         <HeroSectionTwo/>
     </div>
 </template>

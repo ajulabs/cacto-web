@@ -199,7 +199,7 @@ const handleMenuClick = () => {
         width: 100%;
         height: 100%;
         padding-left: 4%;
-        padding-top: 1rem;
+        padding-top: 2rem;
         background: #1A1A1A;
         flex-direction: column;
         justify-content: space-around;
@@ -224,6 +224,22 @@ const handleMenuClick = () => {
             margin-right: 8rem;
             margin-left: 2rem;
         }
+        nav {
+            margin-top: 0;
+        }
+        .ul {
+            left: 50%;
+            justify-content: space-evenly;
+        }
+        .ul li {
+            margin: 0;
+            padding: 0;
+        }
+        .ul li a {
+            font-size: 1.2rem;
+            line-height: .1rem;
+        }
+
     }
 
 </style>

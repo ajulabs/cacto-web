@@ -98,7 +98,7 @@ const props = defineProps({
     .feature-content-Check {
         max-width: 344px;
         justify-content: space-between;
-        padding: 1rem;
+        padding: 0 1rem;
     }
     .feature-title {
         margin: 0;

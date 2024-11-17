@@ -133,4 +133,36 @@ import Button from './Button.vue';
     }
 }
 
+@media (max-width: 375px) {
+    .card-container {
+        height: 111px;
+        padding: 1rem;
+    }
+    .card-content {
+        align-items: center;
+    }
+    .BTN-Footer {
+        max-width: 160px;
+        margin: 1rem auto;
+    }
+    .BG {
+        width: 100%;
+        max-width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+    .title h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 2.8rem;
+    }
+    .title p {
+        font-family: 'Mulish';
+        font-size: 1rem;
+        line-height: 1.3rem;
+        font-weight: 400;
+        padding-top: .5rem;
+    }
+}
+
 </style>

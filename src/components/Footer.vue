@@ -225,12 +225,15 @@ import Line from './Line.vue';
         justify-content: space-evenly;
         height: 666px;
         margin: 0 auto;
-        padding: 0 2rem;
+        padding: 1rem 1rem;
     }
 }
 
-@media (max-width: 265px) {
-    
+@media (max-width: 375px) {
+    .footer-container {
+        padding: 1rem;
+        margin: 0 auto;
+    }
 }
 
 </style>

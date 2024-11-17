@@ -177,17 +177,22 @@ import BtnSejaMember from './BtnSejaMember.vue';
         }
     }
 
-    @media (max-width: 320px) {
+    @media (max-width: 375px) {
+        .main-txt {
+            max-width: 328px;
+        }
         .imgOne {
-            margin-top: 8rem;
+            margin-top: 7rem;
         }
         h1 {
-            font-size: 2.1rem;
-            line-height: 2.1rem;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1rem;
         }
         h2 {
-            font-size: 1.2rem;
-            line-height: 2.1rem;
+            display: none;
         }
     }
 

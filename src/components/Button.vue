@@ -80,6 +80,20 @@ const props = defineProps({
         max-width: 180px;
     }
 }
+
+@media (max-width: 375px) {
+    .txt {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .separator {
+        font-size: 1.5rem;
+    }
+    .custom-button img {
+        max-width: 16px;
+    }
+}
+
 @media (max-width: 320px) {
     .custom-button {
         height: 35px;

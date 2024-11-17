@@ -516,7 +516,6 @@ import TitleText from './TitleText.vue';
 }
 
 /* media queries*/
-
 @media (max-width: 1440px) {
     
 }
@@ -586,6 +585,9 @@ import TitleText from './TitleText.vue';
 }
 
 @media (max-width: 375px) {
+    .hero-section {
+        padding: 0 .2rem;
+    }
     .hero-content {
         max-width: 375px;
         margin: 0 auto;
@@ -595,7 +597,7 @@ import TitleText from './TitleText.vue';
         max-width: 375px;
         gap: 0;
         padding: 0 .5rem;
-        margin-top: 0px;
+        margin-top: 2rem;
     }
     .hero-stats h2 {
         font-size: 1.2rem;
@@ -617,22 +619,25 @@ import TitleText from './TitleText.vue';
         font-size: 1rem;
         line-height: 1.6rem;
     }
+    .feature-content {
+    }
     .feature-element-one,
     .feature-element-two {
         padding: 0 1rem;
-        margin-top: 2rem;
     }
     .feature-group-one {
         max-width: 344px;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 1rem;
     }
     .feature-group-two {
         max-width: 344px;
         flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 1rem;
+        justify-content: space-between;
+        margin: 2rem auto;
+    }
+    .feature-group-two .feature-content{
+        height: 310px;
     }
     .content-six-txt {
         max-width: 200px;
@@ -657,10 +662,12 @@ import TitleText from './TitleText.vue';
     }
     .Hero-element-five {
         max-width: 375px;
-        margin-top: 1rem;
+        margin: 0 auto;
+        margin-top: 2rem;
         padding: 0 1rem;
     }
     .Hero-element-five h2 {
+        padding: 0 .2rem;
         font-size: 2rem;
         line-height: .9rem;
     }
@@ -676,6 +683,7 @@ import TitleText from './TitleText.vue';
         width: 100%;
         top: 90px;
         height: 170px;
+        border-radius: 10px;
     }
     .image-block img {
         max-width: 295px;
@@ -695,6 +703,27 @@ import TitleText from './TitleText.vue';
     .feature-card img {
         width: 100%;
         max-width: 30.23px;
+    }
+    .gradient-overlay-B {
+        height: 170px;
+        border-radius: 10px;
+    }
+    .image-block-B img {
+        max-width: 295px;
+        top: 10px;
+    }
+    .feature-card-B {
+        bottom: 183px;
+        left: -50px;
+        padding: 0 1.5rem;
+    }
+    .feature-card-B img {
+        width: 100%;
+        max-width: 100px;
+    }
+    .media-container {
+        margin: 0 auto;
+        padding: 0 1rem;
     }
 }
 </style>

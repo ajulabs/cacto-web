@@ -68,7 +68,7 @@ const props = defineProps({
 @media (max-width: 375px) {
     .text-image-layout {
         max-width: 344px;
-        margin: 1rem 0;
+        margin: 1rem auto;
         padding: 1rem 1rem;
     }
     .text-image-layout h2 {
