@@ -167,7 +167,7 @@ const handleMenuClick = () => {
     @media(max-width: 425px){
     .content {  
         max-width: 575vw;
-        max-height: 48px;
+        max-height: 70px;
         padding: 0;
     }
 
@@ -176,6 +176,7 @@ const handleMenuClick = () => {
         justify-content: space-between;
         align-items: center;
         padding-left: 6rem;
+        margin-top: .5rem;
     }
 
     .logo {

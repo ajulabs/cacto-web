@@ -26,4 +26,10 @@
         margin-bottom: 2rem;
     }
 }
+
+@media (max-width: 375px) {
+    .divisoria {
+        margin-bottom: 1.2rem;
+    }
+}
 </style>

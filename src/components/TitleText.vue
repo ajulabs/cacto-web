@@ -65,4 +65,27 @@ const props = defineProps({
     }
 }
 
+@media (max-width: 375px) {
+    .text-image-layout {
+        max-width: 344px;
+        margin: 1rem 0;
+        padding: 1rem 1rem;
+    }
+    .text-image-layout h2 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+    .text-image-layout p {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        font-weight: 400;
+        margin: 0;
+    }
+    .text-image-layout h2::before {
+        height: 3rem;
+    }
+}
+
 </style>

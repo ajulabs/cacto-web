@@ -66,8 +66,21 @@ const navigateToPage = () => {
         width: 40px;
     }
 }
+
+@media (max-width: 375px) {
+    .text-content {
+        margin-left: 1rem;
+    }
+    .join-button {
+        max-width: 100px;
+        max-height: 31px;
+        font-size: .6rem;
+        box-shadow: 3.95px 3.95px 0px 0px #FFFFFF;
+    }
+    .join-button img {
+        width: 20px;
+        padding-top: .1rem;
+    }
+}
 </style>
 
-width: 100%;
-    height: 598px;
-    max-width: 631px;
