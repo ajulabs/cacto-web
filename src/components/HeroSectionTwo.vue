@@ -331,13 +331,8 @@ import TitleText from './TitleText.vue';
     z-index: 2;
 }
 .image-block {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 12px;
-}
-.image-block-B {
+    width: 100%;
+    max-width: 546px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -346,14 +341,23 @@ import TitleText from './TitleText.vue';
 }
 .image-block img {
     width: 100%;
-    max-width: 546px;
+    /* max-width: 546px; */
     position: relative;
     object-fit: cover;
     z-index: 2;   
 }
-.image-block-B img {
+.image-block-B {
     width: 100%;
     max-width: 546px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 12px;
+}
+.image-block-B img {
+    width: 100%;
+    /* max-width: 546px; */
     position: relative;
     object-fit: cover;
     margin-top: 6%;
@@ -619,8 +623,6 @@ import TitleText from './TitleText.vue';
         font-size: 1rem;
         line-height: 1.6rem;
     }
-    .feature-content {
-    }
     .feature-element-one,
     .feature-element-two {
         padding: 0 1rem;
@@ -685,14 +687,12 @@ import TitleText from './TitleText.vue';
         height: 170px;
         border-radius: 10px;
     }
-    .image-block img {
-        max-width: 295px;
-    }
     .feature-card {
         max-width: 140px;
         height: 50px;
         left: 215px;
         bottom: 183px;
+        margin-right: 1rem;
     }
     .feature-card h2 {
         font-size: 1rem;
@@ -707,6 +707,9 @@ import TitleText from './TitleText.vue';
     .gradient-overlay-B {
         height: 170px;
         border-radius: 10px;
+    }
+    .image-block img {
+        max-width: 295px;
     }
     .image-block-B img {
         max-width: 295px;
@@ -724,6 +727,63 @@ import TitleText from './TitleText.vue';
     .media-container {
         margin: 0 auto;
         padding: 0 1rem;
+    }
+}
+
+@media (max-width: 320px ) {
+    .image-block img, .image-block-B img {
+        max-width: 275px;
+    }
+    .gradient-overlay {
+        height: 150px;
+    }
+    .feature-card {
+        max-width: 120px;
+        height: 40px;
+        left: 182px;
+        bottom: 163px;
+    }
+    .feature-group-one {
+        max-width: 320px;
+        padding: 2rem 0;
+    }
+    .feature-card {
+        padding: 0 .3rem 0 .5rem;
+    }
+    .feature-card h2 {
+        padding: .5rem .2rem ;
+        font-size: .9rem;
+    }
+    .feature-card-B {
+        max-width: 90px;
+        left: -32px;
+        bottom: 115px;
+    }
+    .feature-card-B img {
+        width: 100%;
+    }
+    .Hero-element-five h2 {
+        margin-top: 1rem;
+        line-height: 1rem;
+        font-size: 1.8rem;
+    }
+    .content-six-txt {
+        max-width: 150px;
+        height: 170px;
+        padding: 0 1rem 1rem 1rem;
+    }
+    .content-six-txt h1 {
+        padding-top: 1.2rem;
+        line-height: 1rem;
+    }
+    .content-six-txt p {
+        margin-top: 1.2rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+    .span-BTN-ELSIX {
+        top: 11.5rem;
+        left: 2rem;
     }
 }
 </style>

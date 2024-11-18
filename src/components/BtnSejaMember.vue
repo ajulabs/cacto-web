@@ -39,7 +39,8 @@ import ModalAgendamento from './ModalAgendamento.vue';
 .div_ctaBtn button:hover {
     background-color: #e65500;
 }
-/* Smartphones pequenos */
+
+/* Responsividade */
 @media(max-width: 590px){
     .cta-button {
         max-width: 200px;
@@ -67,11 +68,15 @@ import ModalAgendamento from './ModalAgendamento.vue';
 }
 
 @media(max-width: 320px) {
-    .cta-button {
+    .div_ctaBtn {
+        max-height: 25px;
         display: flex;
         justify-content: center;
         text-align: center;
-        padding: 2rem;
+        padding: 0;
+    }
+    .cta-button {
+        max-height: 24px;
     }
 }
 </style>

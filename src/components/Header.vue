@@ -239,7 +239,19 @@ const handleMenuClick = () => {
             font-size: 1.2rem;
             line-height: .1rem;
         }
+    }
 
+    @media (max-width: 320px ) {
+        .content {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .menu-ic {
+            max-width: 10px;
+            font-size: 2rem;
+        }
     }
 
 </style>

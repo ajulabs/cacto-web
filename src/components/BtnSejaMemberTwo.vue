@@ -82,5 +82,22 @@ const navigateToPage = () => {
         padding-top: .1rem;
     }
 }
+
+@media (max-width: 320px ) {
+    .text-content {
+        margin-left: 1rem;
+    }
+    .join-button {
+        max-width: 80px;
+        max-height: 25px;
+        font-size: .6rem;
+        box-shadow: 3.95px 3.95px 0px 0px #FFFFFF;
+    }
+    .join-button img {
+        width: 20px;
+        padding-top: .1rem;
+        margin-left: 10px;
+    }
+}
 </style>
 

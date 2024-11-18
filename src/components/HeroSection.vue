@@ -196,4 +196,12 @@ import BtnSejaMember from './BtnSejaMember.vue';
         }
     }
 
+    @media (max-width: 320px ) {
+        .main-txt h1 {
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            margin-bottom: .5rem;
+        }
+    }
+
 </style> 

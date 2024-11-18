@@ -165,4 +165,20 @@ import Button from './Button.vue';
     }
 }
 
+@media ( max-width: 320px ) {
+    .card-container {
+        height: 100px;
+        padding: .5rem;
+    }
+    .card-content {
+        margin-top: .5rem;
+    }
+    .BG {
+        margin-left: .4rem;
+    }
+    .BTN-Footer {
+        margin-top: .5rem;
+    }
+}
+
 </style>

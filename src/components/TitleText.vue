@@ -88,4 +88,11 @@ const props = defineProps({
     }
 }
 
+@media (max-width: 320px ) {
+    .text-image-layout {
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+}
+
 </style>

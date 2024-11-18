@@ -45,7 +45,6 @@ const props = defineProps({
     flex-direction: column;
     justify-content: center;
 }
-
 .feature-title {
     margin-top: 4rem;
 }
@@ -110,6 +109,15 @@ const props = defineProps({
     }
     .check-list {
         margin: 0;
+    }
+}
+
+@media (max-width: 320px ) {
+    .feature-content-Check {
+        max-width: 300px;
+        justify-content: space-between;
+        padding: 0 1rem;
+        gap: 3rem;
     }
 }
 </style>
