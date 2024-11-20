@@ -219,7 +219,7 @@ const handleMenuClick = () => {
     }
     }
     
-    @media (max-width: 384px) {
+    @media (max-width: 380px) {
         .menu-ic {
             margin-right: 8rem;
             margin-left: 2rem;

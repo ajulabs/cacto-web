@@ -22,8 +22,8 @@ const props = defineProps({
 
 <style scoped>
 .container-Serv {
-    width: 20rem;
-    height: 24.733;
+    width: 100%;
+    max-width: 1360px;
     display: flex;
     justify-content: flex-start;
     align-items: start;
@@ -33,20 +33,24 @@ const props = defineProps({
     border: 1px solid #3A3B3E;
     border-radius: .9rem;
 }
+.content-Icon {
+    font-size: 2rem;
+    padding: 1rem 1rem 1rem 0 ;
+}
 .container-Serv h2 {
     color: #FFFFFF;
     font-family: 'poppins';
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 2.25rem;
+    font-size: 2.5rem;
+    line-height: 3.8rem;
 }
 
 .container-Serv p {
     color: #FFFFFF;
     font-family: 'poppins';
     font-weight: 300;
-    font-size: 1rem;
-    line-height: 2.25rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
 }
 
 

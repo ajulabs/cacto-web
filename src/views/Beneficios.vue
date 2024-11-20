@@ -57,6 +57,11 @@ import Service from '@/components/Service.vue';
 
 <style scoped>
 
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 .DivTitle {
     margin-top: 2.3rem;
     margin-bottom: 2rem;
@@ -64,23 +69,33 @@ import Service from '@/components/Service.vue';
     justify-content: center;
     align-items: center;
 }
-
 .Brand {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 15px;
 }
-
 .title {
     padding: 4.8rem 0 2.8rem 0;
 }
-
 .title h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 2.9rem;
     align-items: center;
     color: #FFFFFF;
+}
+
+@media (max-width: 768px ) {
+    .Brand {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 568px ) {
+    .Brand {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 </style>

@@ -229,7 +229,7 @@ import Line from './Line.vue';
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .footer-container {
         padding: 1rem;
         margin: 0 auto;

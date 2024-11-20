@@ -45,20 +45,22 @@ const props=defineProps ({
 </template>
 
 <style scoped>
-
+.container-card {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+}
 .contentCard {
-    width: 21rem;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 1rem;
     border-radius: 1rem;
     background-color: #171717;
     border: solid 0.96px rgba(255, 255, 255, 0.1)
 }
-
-
 .contentCard h2 {
     font-family: 'poppins', sans-serif;
     font-weight: 300;
@@ -66,7 +68,6 @@ const props=defineProps ({
     line-height: 2rem;
     color: #FFFFFF;
 }
-
 .contentCard h1 {
     font-family: 'poppins';
     font-weight: 600;
@@ -74,7 +75,6 @@ const props=defineProps ({
     line-height: 3.358rem;
     color: #FFFFFF;
 }
-
 .contentCard p {
     font-family: 'Poppins';
     font-weight: 200;
@@ -82,7 +82,6 @@ const props=defineProps ({
     line-height: 2rem;
     color: #A0A3AA;
 }
-
 .LinDiv {
     border: 0;
     height: 1px;
@@ -91,8 +90,6 @@ const props=defineProps ({
     margin: .7rem;
     opacity: 40%;
 }
-
-
 .btn button {
     width: 11.379rem;
     height: 2.879rem;
@@ -108,8 +105,8 @@ const props=defineProps ({
     font-weight: 600;
     cursor: pointer;
 }
-
 .selected {
+    width: 100%;
     border-radius: 1rem;
     border: 0.96px solid transparent;
     background: linear-gradient(320deg, #FF6400, #FFD3B7);
