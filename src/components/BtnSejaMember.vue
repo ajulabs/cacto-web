@@ -44,8 +44,6 @@ import ModalAgendamento from './ModalAgendamento.vue';
     .cta-button {
         max-width: 200px;
         max-height: 20px;
-        /* padding: 16px 0 16px 0; */
-        /* margin-bottom: 1.5rem; */
         border-radius: 6px;
         font-size: 1.3rem;
         display: flex;
@@ -58,6 +56,16 @@ import ModalAgendamento from './ModalAgendamento.vue';
         align-items: center;
     }
 }
+
+@media (max-width: 375px) {
+    .cta-button {
+        max-width: 130px;
+        font-size: .9rem;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
 @media(max-width: 320px) {
     .cta-button {
         display: flex;

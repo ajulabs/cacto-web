@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="feature-content">
+    <div class="feature-content-Check">
         <div class="feature-title">
             <h1 v-html="title"></h1>
         </div>
@@ -37,9 +37,13 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.feature-content {
+.feature-content-Check {
     width: 100%;
+    height: 400px;
     max-width: 605.05px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .feature-title {
@@ -48,7 +52,6 @@ const props = defineProps({
 .feature-description p {
     width: 100%;
     max-width: 605px;
-    height: 88px;
     word-wrap: break-word;
     margin-top: 1.5rem;
     line-height: 2.9rem;
@@ -89,5 +92,24 @@ const props = defineProps({
     font-size: 1.22rem;
     line-height: 1.952rem;
     color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+    .feature-content-Check {
+        max-width: 344px;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+    .feature-title {
+        margin: 0;
+    }
+    .feature-title h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 700;
+    }
+    .check-list {
+        margin: 0;
+    }
 }
 </style>

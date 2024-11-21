@@ -215,7 +215,6 @@ import TitleText from './TitleText.vue';
     width: 100%;
     max-width: 631px;
 }
-
 .text-content h1 {
     position: relative;
     font-size: 3rem;
@@ -244,6 +243,9 @@ import TitleText from './TitleText.vue';
     line-height: 1.8rem;
     text-align: left;
     color: #FFFFFF;
+}
+.txt-content-rigth {
+    padding: 0 2rem;
 }
 .hero-stats h2 {
     width: 100%;
@@ -293,7 +295,6 @@ import TitleText from './TitleText.vue';
 }
 .feature-group-two {
     width: 100%;
-    height: auto;
     max-width: 1376px;
     display: flex;
     justify-content: space-between;
@@ -303,7 +304,6 @@ import TitleText from './TitleText.vue';
     position: relative;
     width: 100%;
     max-width: 600.57px;
-    height: 503.56px;
 }
 .feature-element-two, .feature-element-one {
     width: 100%;
@@ -366,14 +366,14 @@ import TitleText from './TitleText.vue';
     position: relative;
     z-index: 3;
     background: #FFFFFF;
-    left: 410px;
-    bottom: 325px;
     border-radius: 0.4em;
     display: flex;
     align-items: center;
     text-align: center;
     padding: 0.476rem 0.22rem 0.476rem 1.22rem;
     gap: 0.2rem;
+    bottom: 325px;
+    left: 410px;
 } 
 .feature-card-B {
     position: relative;
@@ -397,7 +397,6 @@ import TitleText from './TitleText.vue';
     text-align: center;
     padding: 0.476rem 0.22rem 0.476rem 1.22rem;
 }
-
 .feature-four-container-B {
     margin-top: 3rem;
 }
@@ -464,7 +463,6 @@ import TitleText from './TitleText.vue';
 /* Hero 6 */
 .Hero-element-six{
     width: 100%;
-    height: 902px;
     margin: 0 auto;
     max-width: 1400px;
     position: relative;
@@ -518,7 +516,6 @@ import TitleText from './TitleText.vue';
 }
 
 /* media queries*/
-
 @media (max-width: 1440px) {
     
 }
@@ -585,5 +582,148 @@ import TitleText from './TitleText.vue';
         left: 11rem;
     }
 
+}
+
+@media (max-width: 375px) {
+    .hero-section {
+        padding: 0 .2rem;
+    }
+    .hero-content {
+        max-width: 375px;
+        margin: 0 auto;
+        gap: 0;
+    }
+    .hero-stats {
+        max-width: 375px;
+        gap: 0;
+        padding: 0 .5rem;
+        margin-top: 2rem;
+    }
+    .hero-stats h2 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    .stats-counter {
+        max-width: 344px;
+        height: 61px;
+        margin: 0;
+    }
+    .stat-item {
+        max-width: 68px;
+    }
+    .stat-item h1 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+    .stat-item h3 {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .feature-content {
+    }
+    .feature-element-one,
+    .feature-element-two {
+        padding: 0 1rem;
+    }
+    .feature-group-one {
+        max-width: 344px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feature-group-two {
+        max-width: 344px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2rem auto;
+    }
+    .feature-group-two .feature-content{
+        height: 310px;
+    }
+    .content-six-txt {
+        max-width: 200px;
+        height: 200px;
+        top: 0;
+        left: 1rem;
+        padding: 1rem;
+    }
+    .content-six-txt h1 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.3rem;
+    }
+    .content-six-txt p{
+        font-size: .9rem;
+        font-weight: 600;
+        line-height: 1.2rem;
+    }
+    .span-BTN-ELSIX {
+        top: 13rem;
+        left: 2rem;
+    }
+    .Hero-element-five {
+        max-width: 375px;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 0 1rem;
+    }
+    .Hero-element-five h2 {
+        padding: 0 .2rem;
+        font-size: 2rem;
+        line-height: .9rem;
+    }
+    .five-txt-top {
+        max-width: 290px;
+    }
+    .five-txt-top p {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+    }
+    .gradient-overlay {
+        width: 100%;
+        top: 90px;
+        height: 170px;
+        border-radius: 10px;
+    }
+    .image-block img {
+        max-width: 295px;
+    }
+    .feature-card {
+        max-width: 140px;
+        height: 50px;
+        left: 215px;
+        bottom: 183px;
+    }
+    .feature-card h2 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 700;
+        padding: 0 .8rem;
+    }
+    .feature-card img {
+        width: 100%;
+        max-width: 30.23px;
+    }
+    .gradient-overlay-B {
+        height: 170px;
+        border-radius: 10px;
+    }
+    .image-block-B img {
+        max-width: 295px;
+        top: 10px;
+    }
+    .feature-card-B {
+        bottom: 183px;
+        left: -50px;
+        padding: 0 1.5rem;
+    }
+    .feature-card-B img {
+        width: 100%;
+        max-width: 100px;
+    }
+    .media-container {
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
 }
 </style>

@@ -14,5 +14,4 @@ import HeroSectionTwo from '@/components/HeroSectionTwo.vue';
 </template>
 
 <style scoped>
-
 </style>
