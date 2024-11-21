@@ -1,7 +1,5 @@
 <script setup>
 import LineDIv from './Line.vue';
-import Line from './Line.vue';
-import LineVertical from './LineVertical.vue';
 
 const props=defineProps ({
     tipo: {
@@ -25,8 +23,8 @@ const props=defineProps ({
 </script>
 
 <template>
-    <div class="container-card" :class="{selected: isSelected }">
-        <div class="contentCard">
+    <div class="container-card" >
+        <div class="contentCard" :class="{selected: isSelected }">
             <h2>{{ tipo }}</h2>
             <h1> {{ valor }}</h1>
             <p>{{ text }}</p>
@@ -47,16 +45,17 @@ const props=defineProps ({
 <style scoped>
 .container-card {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     display: flex;
     align-items: center;
+    /* padding: 0 2rem; */
 }
 .contentCard {
-    width: 300px;
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0;
     border-radius: 1rem;
     background-color: #171717;
     border: solid 0.96px rgba(255, 255, 255, 0.1)
