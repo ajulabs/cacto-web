@@ -48,7 +48,6 @@ const props=defineProps ({
     max-width: 250px;
     display: flex;
     align-items: center;
-    /* padding: 0 2rem; */
 }
 .contentCard {
     width: 250px;
@@ -111,7 +110,6 @@ const props=defineProps ({
     background: linear-gradient(320deg, #FF6400, #FFD3B7);
     padding: 0.96px;
 }
-
 .selected button{
     background: linear-gradient(45deg, #FF6400, #FFD3B7);
     color: #FFFFFF;

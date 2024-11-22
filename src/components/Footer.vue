@@ -12,6 +12,7 @@ import Line from './Line.vue';
         <Line/>
         <div class="container-sobre">
             <div class="content-sobre">
+
                 <div class="local-content">
                     <div class="contacto-local">
                         <img src="/src/assets/cacto_logo.svg" alt="">
@@ -31,6 +32,7 @@ import Line from './Line.vue';
                     </div>
                     <Line/>
                 </div>
+
                 <div class="contacto-content">
                     <h1>CONTATO</h1>
                     <div class="list-footer-contacto">
@@ -68,6 +70,7 @@ import Line from './Line.vue';
                         </div>
                     </div>
                 </div>
+
             </div>
             <footer class="footer-copy">
                 <p>© 2024 Todos os direitos reservados </p>
@@ -213,13 +216,27 @@ import Line from './Line.vue';
     margin: 4rem 0 8rem 0;
 }
 
-@media (max-width: 560px) {
-    .footer-container {
+@media (max-width: 1165px) {
+    .footer-content {
         padding: 0 4rem;
     }
 }
 
-@media (max-width: 460px ){
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .footer-content {
+        padding: 0 .2rem;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 0 1rem;
+    }
     .content-sobre {
         flex-direction: column;
         justify-content: space-evenly;
@@ -229,11 +246,5 @@ import Line from './Line.vue';
     }
 }
 
-@media (max-width: 768px) {
-    .footer-container {
-        padding: 1rem;
-        margin: 0 auto;
-    }
-}
 
 </style>

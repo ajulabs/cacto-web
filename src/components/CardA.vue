@@ -93,47 +93,69 @@ import Button from './Button.vue';
 }
 .BTN-Footer {
     width: 100%;
-    max-width: 250px;
+    max-width: 540px;
     height: 100%;
     max-height: 54px;
     z-index: 2;
-    margin-left: 10rem;
+    margin: 0 auto;
     margin-top: 1rem;
     padding: 16px 18px 16px 18px;
 }
 
-
-@media (max-width: 882px) {
+@media (max-width: 1323px ) {
     .BTN-Footer {
         padding: 0;
     }
+}
+
+@media (max-width: 808px ) {
     .card-container {
-        max-height: 130px;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 769px) {
+    .BTN-Footer {
+        padding: 0;
+    }
+    .card-content {
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container {
+        max-height: 150px;
+        padding: 1rem 0 0 0;
     }
     .BG {
+        margin-left: 1rem;
         max-height: 80px;
         max-width: 80px;
     }
 }
+
 @media (max-width: 668px) {
     .Card-wrapper {
         flex-direction: column;
         gap: 60px;
     }
     .BTN-Footer {
-        margin-top: .5rem;
-    }
-
-}
-@media (max-width: 515px) {
-    .BTN-Footer {
-        max-width: 120px;
         margin-top: 1rem;
-        margin-left: 2rem;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 405px) {
+    .BTN-Footer {
+        max-width: 180px;
+        height: 100px;
+    }
+    .Card-wrapper {
+        max-width: 511px;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 387px) {
     .card-container {
         height: 111px;
         padding: 1rem;
@@ -142,7 +164,6 @@ import Button from './Button.vue';
         align-items: center;
     }
     .BTN-Footer {
-        max-width: 160px;
         margin: 1rem auto;
     }
     .BG {
@@ -162,22 +183,6 @@ import Button from './Button.vue';
         line-height: 1.3rem;
         font-weight: 400;
         padding-top: .5rem;
-    }
-}
-
-@media ( max-width: 320px ) {
-    .card-container {
-        height: 100px;
-        padding: .5rem;
-    }
-    .card-content {
-        margin-top: .5rem;
-    }
-    .BG {
-        margin-left: .4rem;
-    }
-    .BTN-Footer {
-        margin-top: .5rem;
     }
 }
 

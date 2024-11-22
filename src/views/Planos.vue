@@ -234,5 +234,4 @@ const selectCard = (cardId) => {
     }
 }
 
-
 </style>

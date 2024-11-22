@@ -27,7 +27,11 @@ const props = defineProps({
 </template>
 
 <style scoped>
-
+.Btn-layout {
+    max-width: 1350px;
+    display: flex;
+    justify-content: center;
+}
 .custom-button {
     width: 100%;
     max-width: 212px;
@@ -69,35 +73,20 @@ const props = defineProps({
     text-align: center;
 }
 
-@media (max-width: 1400px) {
-    .custom-button{
-        max-width: 190px;
-    }
-}
-@media (max-width: 881px) {
+
+@media (max-width: 666px) {
     .custom-button {
         height: 45px;
-        max-width: 180px;
     }
 }
 
-@media (max-width: 375px) {
-    .txt {
-        font-size: 1.2rem;
-        font-weight: 700;
-    }
-    .separator {
-        font-size: 1.5rem;
-    }
-    .custom-button img {
-        max-width: 16px;
-    }
-}
 
-@media (max-width: 320px) {
+@media (max-width: 368px) {
     .custom-button {
-        height: 35px;
-        max-width: 145px;
+        max-width: 200px;
+    }
+    .Btn-layout {
+        /* max-width: 200px; */
     }
 }
 
