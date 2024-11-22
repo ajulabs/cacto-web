@@ -15,8 +15,10 @@ const selectCard = (cardId) => {
         <div class="imgPlan">
             <img src="/src/assets/imgPlan.png" alt="">
         </div>
+
         <div class="containerPlan">
             <div class="contentPlan">
+
                 <div class="text">
                     <h2>Titulo</h2>
                     <p>eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit</p>
@@ -231,6 +233,12 @@ const selectCard = (cardId) => {
     .text {
         padding: 1rem;
         margin: 1rem 0;
+    }
+}
+
+@media (max-width: 480px ) {
+    .text {
+        padding: 1.5rem;
     }
 }
 

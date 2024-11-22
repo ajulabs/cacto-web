@@ -86,7 +86,6 @@ const props = defineProps({
         max-width: 200px;
     }
     .Btn-layout {
-        /* max-width: 200px; */
     }
 }
 
