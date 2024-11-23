@@ -83,7 +83,7 @@ const handleMenuClick = () => {
         color: #FF6400;
     }
 /* Responsividade */
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
     nav {
         max-width: 768px;
         padding: 1rem;
@@ -91,18 +91,18 @@ const handleMenuClick = () => {
     .ul {
         justify-content: space-evenly;
     }
-    }
+    } */
 
-    @media (max-width: 720px) {
+    /* @media (max-width: 720px) {
         .content {
             max-height: 68px;
         }
         nav {
             padding: 0 4rem;
         }
-    }
+    } */
 
-    @media(max-width:575px){
+    /* @media(max-width:575px){
 
     .content {
         max-width: 575vw;
@@ -136,47 +136,27 @@ const handleMenuClick = () => {
         justify-content: space-evenly;
         align-items: center;
     }
-    }
+    } */
 
-    @media (max-width: 500px){
+    /* @media (max-width: 500px){
     .logo {
         max-width: 110px;
     }
-    }
+    } */
 
-    @media (max-width: 480px ) {
-    .content {
-        max-height: 58px;
-    }
-    .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo img {
-        max-width: 100%;
-    }
-    }
-
-    @media (max-width: 455px ) {
-    nav {
-        padding: 1rem;
-    }
-    }
-
-    @media(max-width: 425px){
+    @media(max-width: 480px){
     .content {  
         max-width: 575vw;
         max-height: 70px;
-        padding: 0;
+        margin: 0 auto;
+        padding: 1rem;
     }
 
     nav {
         max-width: 375px;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-        padding-left: 6rem;
-        margin-top: .5rem;
+        margin: 0  auto;
     }
 
     .logo {
@@ -219,7 +199,7 @@ const handleMenuClick = () => {
     }
     }
     
-    @media (max-width: 380px) {
+    /* @media (max-width: 380px) {
         .menu-ic {
             margin-right: 8rem;
             margin-left: 2rem;
@@ -239,9 +219,9 @@ const handleMenuClick = () => {
             font-size: 1.2rem;
             line-height: .1rem;
         }
-    }
+    } */
 
-    @media (max-width: 320px ) {
+    /* @media (max-width: 320px ) {
         .content {
             padding: 1rem;
             display: flex;
@@ -252,6 +232,6 @@ const handleMenuClick = () => {
             max-width: 10px;
             font-size: 2rem;
         }
-    }
+    } */
 
 </style>
