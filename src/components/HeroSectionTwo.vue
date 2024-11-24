@@ -12,8 +12,8 @@ import TitleText from './TitleText.vue';
             <div class="text-container">
                 <div class="text-content txt-content-rigth">
                     <TitleText
-                        title="Lorem Ipsun"
-                        description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
+                        title="Transforme-se em um ambiente que transforma"
+                        description="Na Cacto, você encontra mais do que uma academia: descobre um estilo de vida. Um espaço exclusivo onde o bem-estar físico e mental caminham juntos, e cada treino é uma oportunidade de conexão, superação e crescimento. Com programas personalizados e um ambiente sofisticado, oferecemos uma experiência fitness única enquanto você alcança seus objetivos com eficiência e prazer. Aqui, você é mais que aluno. Você é essencial."
                     />
                     <span class="Btn">
                         <BtnSejaMemberTwo/>
@@ -27,94 +27,69 @@ import TitleText from './TitleText.vue';
 
 
         <div class="hero-stats">
-            <h2>adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr</h2>
+            <h2>Na Cacto, cada número reflete histórias de transformação e pertencimento</h2>
             <div class="stats-counter">
                 <div class="stat-item">
                     <h1>
                         <span class="stat-symbol">+</span>
-                        <span class="stat-number">12.000</span>
+                        <span class="stat-number">1.000</span>
                     </h1>
                     <h3>
-                        <span class="stat-label"> Alunos </span>
+                        <span class="stat-label"> Alunos transformados com treinos personalizados </span>
                     </h3>
                 </div>
                 <div class="stat-item">
                     <h1>
                         <span class="stat-symbol">+</span>
-                        <span class="stat-number">10</span>
+                        <span class="stat-number">100</span>
                     </h1>
-                    <h3> Modalidades </h3>
+                    <h3> Modalidades Exclusivas </h3>
                 </div>
                 <div class="stat-item">
                     <h1>
                         <span class="stat-symbol">+</span>
                         <span class="stat-number">68</span>
+                        <span class="stat-symbol">%</span>
                     </h1>
-                    <h3> Eventos </h3>
+                    <h3> de acompanhamento com profissionais certificados </h3>
                 </div>
             </div>
         </div>
 
-
-        <div class="hero-features">
-
-            <div class="feature-group-one ">
-                <div class="feature-element-one lifting weight">
-                    <div class="feature-content">
-                        <div class="gradient-overlay">
-
-                        </div>
-                        <div class="image-block">
-                            <img src="/src/assets/image 6.png" alt="">
-                        </div>
-                        <div class="feature-card">
-                            <img src="/src/assets/Icon - chat.svg" alt="">
-                            <h2>APRENDA COM OS MELHORES</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-element-two">
-                    <ChekList
-                        title="CONHEÇA O <br> O MÉTODO CACTO"
-                        description="Desenvolva o prazer de se exercitar através de um método embasado em estudos atualizados nas áreas de educação física, nutrição, fisioterapia e psicologia."
-                    />
-                </div>
+        <div class="section-checkList">
+            <div class="section-check-title">
+                <span class="feature-title">
+                    <h1>TENHA OS MELHORES RESULTADO COM O MÉTODO E.S.T.E</h1>
+                </span>
+                <span class="feature-description">
+                    <p>Criado por Felipe Garcez, o Método E.S.T.E transforma o seu treino em uma experiência de eficiência e personalização. Na Cacto, acreditamos que cada pessoa é única - e seu treino também deve ser. Nossa abordagem analisa todo o seu ciclo de treinos com precisão, ajustando cada etapa ao seu perfil e ao seu ritmo. Dividido em 6 momentos estratégicos, o Método E.S.T.E garante que você treine sempre na intensidade ideal para alcançar resultados consistentes, respeitando os limites do seu corpo e maximizando os ganhos – seja qual for o seu objetivo.</p>
+                </span>
             </div>
-
-            <div class="feature-group-two">
-                <div class="feature-element-two squat">
-                    <div class="feature-content">
-                        <div class="gradient-overlay-B"></div>
-                        <div class="image-block-B">
-                            <img src="/src/assets/image 5.png" alt="">
-                        </div>
-                        <div class="feature-card-B">
-                            <img src="/src/assets/icon-fot.png" alt="">
-                            <div class="cardVector-B">
-                                <img src="/src/assets/Vector 431.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="feature-element-one">
-                    <ChekList
-                        title="LOREM IPSUM"
-                        description="Desenvolva o prazer de se exercitar através de um método embasado em estudos atualizados nas áreas de educação física, nutrição, fisioterapia e psicologia."
-                    />
-                </div>
+            <div class="checkList">
+                <ChekList
+                title="TENHA OS MELHORES RESULTADO COM O MÉTODO E.S.T.E"
+                description="Criado por Felipe Garcez, o Método E.S.T.E transforma o seu treino em uma experiência de eficiência e personalização. Na Cacto, acreditamos que cada pessoa é única - e seu treino também deve ser. Nossa abordagem analisa todo o seu ciclo de treinos com precisão, ajustando cada etapa ao seu perfil e ao seu ritmo. Dividido em 6 momentos estratégicos, o Método E.S.T.E garante que você treine sempre na intensidade ideal para alcançar resultados consistentes, respeitando os limites do seu corpo e maximizando os ganhos – seja qual for o seu objetivo."
+                />
             </div>
+            <span class="feature-title">
+                <h1>com o método E.S.T.E, você não apenas treina - você se transforma</h1>
+            </span>
+        </div>
+
+        <div class="feature-description p2">
+            <p>Fale agora com um especialista e descubra como o Método Exclusivo criado por Felipe Garcez, após anos de estudo, pode levar você ao próximo nível.</p>
         </div>
 
 
-        <div class="hero-content bloco-two">
+        <div class="hero-content">
             <div class="media-container">
                 <video src="/src/assets/video2.mp4" autoplay muted loop playsinline></video>
             </div>
             <div class="text-container">
                 <div class="text-content txt-content-left">
                     <TitleText
-                        title="Lorem Ipsun"
-                        description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
+                        title="Por que o método E.S.T.E é único?"
+                        description="O Método E.S.T.E combina ciência, personalização e prazer em treinar. Com um planejamento exclusivo e etapas ajustadas ao seu perfil, ele garante que cada movimento esteja alinhado às suas metas e limites. É mais do que um treino – é uma experiência única que respeita o seu corpo e maximiza seus resultados."
                     />
                 </div>
             </div>
@@ -124,8 +99,9 @@ import TitleText from './TitleText.vue';
             <div class="text-container">
                 <div class="text-content txt-content-rigth">
                     <TitleText
-                        title="Lorem Ipsun"
-                        description="sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporr sit amet, consectetur adipiscing elit, sed do eiusmod tempom dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm"
+                        title="Sim! Somos diferentes"
+                        description="Porque entendemos suas necessidades e oferecemos um método baseado em ciência e resultados. Desde o acolhimento personalizado até o monitoramento constante, cada detalhe é planejado para garantir que você se sinta parte de algo maior e alcance o melhor de si mesmo, sem abrir mão de conforto e segurança.
+                        Venha experimentar a diferença de treinar na Cacto e sinta como é transformar sua rotina com apoio e dedicação em cada movimento."
                     />
                 </div>
             </div>
@@ -136,14 +112,18 @@ import TitleText from './TitleText.vue';
 
         <div class="Hero-element-five">
             <div>
-                <h2>Desfrute de Benefícios Exclusivos</h2>
+                <h2>O que você só vai encontrar aqui!</h2>
             </div>
             <div class="five-txt-top">
                 <span class="iconIMG">
                     <img src="/src/assets/Line.svg" alt="">
                 </span>
-                <p>sit amet, consectetur adipiscing elit, Sed Do Eiusmosit amet, Consectetur <br> adipiscing Elit, Sed Do Eiusmod Sit Amet, Consectetur Adipiscing Elit, Sed Do 
-                <br>Eiusmod D </p>
+                <span class="atendi">
+                    <p>Exclusividade e Cuidado: atendimento individualizado que valoriza seus objetivos e respeita a sua evolução.
+                        Transformação Real: treinos que envolvem e motivam, com resultados que vão além do corpo, mudando sua mente e hábitos.
+                        Comunidade Cacto: um refúgio onde cada aluno se sente valorizado e parte de algo único.
+                    </p>
+                </span>
             </div>
             <span class="videoFHD">
                 <video src="/src/assets/video4.mp4" autoplay muted loop playsinline></video>
@@ -153,8 +133,10 @@ import TitleText from './TitleText.vue';
         <div class="Hero-element-six">
             <img class="background-image" src="/src/assets/image-5.png" alt="">
             <div class="content-six-txt">
-                <h1>LOREL LORE</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic error deserunt aliquid, aliquam molestiae laudantium? Alias nihil quae magni magnam corrupti suscipit fuga porro modi laudantium explicabo, excepturi, deleniti vel.</p>
+                <h1>EXPERIÊNCIA CACTO</h1>
+                <p>
+                    Na Cacto, criamos um ambiente que combina exclusividade e transformação. Aqui, você não apenas treina: você se conecta com um espaço acolhedor, repleto de apoio e motivação.
+                </p>
             </div>
             <span class="span-BTN-ELSIX">
                 <BtnSejaMemberTwo/>
@@ -255,14 +237,20 @@ import TitleText from './TitleText.vue';
     font-size: 3.2rem;
     line-height: 4.8rem;
 }
+.stat-item  h3{
+    margin-top: .5rem;
+    width: 100%;
+    max-width: 242px;
+
+}
 .stats-counter {
     width: 100%;
     max-width: 1376px;
-    height: 108px;
+    /* height: 108px; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 2rem;
+    margin: 4rem 0;
 }
 .stats-counter h1 {
     font-family: 'Poppins';
@@ -282,124 +270,48 @@ import TitleText from './TitleText.vue';
 }
 
 /* Features Section */
-.hero-features {
+.section-checkList {
     width: 100%;
-    max-width: 1376px;
+    max-width: 1206px;
+    margin: 0 auto;
 }
-.feature-group-one {
+.feature-description p {
     width: 100%;
-    max-width: 1376px;
-    display: flex;
-    justify-content: space-between;
-
+    max-width: 1440px;
+    word-wrap: break-word;
+    margin-top: 1.5rem;
+    line-height: 2.9rem;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #A0A3AA;
 }
-.feature-group-two {
+.checkList {
+    margin: 2rem 0;
+}
+.feature-title h1 {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 4.294rem;
+    line-height: 5.465rem;
+}
+.p2 {
+    width: 100%;
+    max-width: 1350px;
+    margin: 2rem 0;
+}
+.p2 p {
+    width: 40%;
+}
+.hero-feature {
     width: 100%;
     max-width: 1376px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
 }
 .feature-content {
     position: relative;
     width: 100%;
     max-width: 600.57px;
-}
-.feature-element-two, .feature-element-one {
-    width: 100%;
-    max-width: 605.05px;
-}
-.gradient-overlay {
-    position: absolute;
-    border-radius: 1.708rem;
-    background: linear-gradient(40.04deg, #FF6400 0%, #FFC7A4 100%);
-    width: 100%;
-    height: 312.28px;
-    max-width: 624.57px;
-    top: 191.27px;
-    opacity: 68%;
-    z-index: 2;
-}
-.gradient-overlay-B {
-    position: absolute;
-    border-radius: 1.708rem;
-    background: linear-gradient(40.04deg, #FF6400 0%, #FFC7A4 100%);
-    width: 100%;
-    max-width: 624.57px;
-    height: 312.28px;
-    opacity: 68%;
-    z-index: 2;
-}
-.image-block {
-    width: 100%;
-    max-width: 546px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 12px;
-}
-.image-block img {
-    width: 100%;
-    /* max-width: 546px; */
-    position: relative;
-    object-fit: cover;
-    z-index: 2;   
-}
-.image-block-B {
-    width: 100%;
-    max-width: 546px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 12px;
-}
-.image-block-B img {
-    width: 100%;
-    /* max-width: 546px; */
-    position: relative;
-    object-fit: cover;
-    margin-top: 6%;
-    z-index: 2;   
-}
-.feature-card {
-    width: 100%;
-    height: 94.23px;
-    max-width: 283.01px;
-    position: relative;
-    z-index: 3;
-    background: #FFFFFF;
-    border-radius: 0.4em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0.476rem 0.22rem 0.476rem 1.22rem;
-    gap: 0.2rem;
-    bottom: 325px;
-    left: 410px;
-} 
-.feature-card-B {
-    position: relative;
-    z-index: 3;
-    right: 8.5rem;
-    bottom: 25rem;
-    border-radius: 0.4em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0.476rem 0.22rem 0.476rem 1.22rem;
-    gap: 0.2rem;
-}
-.cardVector-B {
-    position: relative;
-    right: 4.1rem;
-    top: 3rem;
-    border-radius: 0.4em;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 0.476rem 0.22rem 0.476rem 1.22rem;
 }
 .feature-four-container-B {
     margin-top: 3rem;
@@ -440,11 +352,17 @@ import TitleText from './TitleText.vue';
     width: 100%;
     display: flex;
 }
+.atendi {
+    width: 100%;
+    max-width: 1277px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 .five-txt-top p {
     font-family: "DM Sans";
-    font-weight: 700;
-    font-size: 1.1rem;
-    line-height: 1.4rem;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
 }
 .iconIMG img{
     width: 10px;
@@ -523,7 +441,6 @@ import TitleText from './TitleText.vue';
 @media (max-width: 1440px) {
     
 }
-
 @media (max-width: 1100px) {
     .hero-section {
         max-width: 1100px;

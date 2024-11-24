@@ -29,12 +29,11 @@ const props = defineProps({
 }
 .text-image-layout h2 {
     position: relative;
-    font-size: 8rem;
+    font-size: 4rem;
     font-weight: 600;
     font-family: "Sofia Sans";
-    margin-bottom: 1.5rem;
     padding-left: 2.5rem;
-    line-height: 9.6rem;
+    line-height: 4.8rem;
     color: #FFFFFF;
 }
 .text-image-layout h2::before {
@@ -43,7 +42,7 @@ const props = defineProps({
     left: 0;
     top: 0;;
     margin-top: 1rem;
-    height: 8rem;
+    height: 3.5rem;
     width: 3px;
     background-color: #ff6600;
 }
@@ -54,7 +53,7 @@ const props = defineProps({
     font-weight: 400;
     font-size: 2.4rem;
     color: #FFFFFF;
-    line-height: 2.4rem;
+    line-height: 3.6rem;
     overflow-wrap: break-word;
     margin-top: 1rem;
 }

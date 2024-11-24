@@ -10,8 +10,10 @@ import Button from './Button.vue';
                     class="BG">
                 </div>
                 <div class="title">
-                    <h1>Texto</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum <br> dolor sit amet, consectetur </p>
+                    <h1>Vamos conversar sobre os seus objetivos?</h1>
+                    <p>
+                        Entre em contato e descubra como a Cacto pode ajudar você a chegar mais longe.
+                    </p>
                 </div>
             </div>
             <div class="BTN-Footer">
@@ -29,8 +31,10 @@ import Button from './Button.vue';
                     class="BG">
                 </div>
                 <div class="title">
-                    <h1>Texto</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur Lorem ipsum <br> dolor sit amet, consectetur </p>
+                    <h1> Escolha o plano perfeito para <br>você!</h1>
+                    <p>
+                        Seja você iniciante ou atleta, temos o plano ideal para acompanhar a sua transformação.
+                    </p>
                 </div>
             </div>
             <div class="BTN-Footer">
@@ -72,8 +76,8 @@ import Button from './Button.vue';
 .title h1 {
     font-family: 'Poppins';
     font-weight: 700;
-    font-size: 3rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
     color: #1C1C1E;
 }
 .title p {

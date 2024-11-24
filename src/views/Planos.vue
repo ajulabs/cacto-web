@@ -237,6 +237,9 @@ const selectCard = (cardId) => {
 }
 
 @media (max-width: 480px ) {
+    .Container-main {
+        padding-top: 7rem;
+    }
     .text {
         padding: 1.5rem;
     }
