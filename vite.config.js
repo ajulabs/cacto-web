@@ -6,8 +6,5 @@ export default defineConfig({
   plugins: [vue()],
   base: '/cacto-web/', 
   resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
   },
 })

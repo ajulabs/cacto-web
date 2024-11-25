@@ -1,5 +1,5 @@
 <script setup>
-import Service from '@/components/Service.vue';
+import Service from '../components/Service.vue';
 
 
 </script>

@@ -1,6 +1,6 @@
 <script setup>
-import CardPlanos from '@/components/CardPlanos.vue';
-import LineDIv from '@/components/Line.vue';
+import CardPlanos from '../components/CardPlanos.vue';
+import LineDIv from '../components/Line.vue';
 import { ref } from 'vue';
 
 const selectedCard =ref(null);

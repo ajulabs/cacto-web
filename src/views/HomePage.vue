@@ -1,6 +1,6 @@
 <script setup>
-import HeroSection from '@/components/HeroSection.vue';
-import HeroSectionTwo from '@/components/HeroSectionTwo.vue';
+import HeroSection from '../components/HeroSection.vue';
+import HeroSectionTwo from '../components/HeroSectionTwo.vue';
 
 
 </script>

@@ -1,8 +1,8 @@
 <script setup>
-import BtnSejaMemberTwo from '@/components/BtnSejaMemberTwo.vue';
-import CardModallities from '@/components/CardModallities.vue';
-import MenuModalities from '@/components/MenuModalities.vue';
-import TitleTextTwo from '@/components/TitleTextTwo.vue';
+import BtnSejaMemberTwo from '../components/BtnSejaMemberTwo.vue';
+import CardModallities from '../components/CardModallities.vue';
+import MenuModalities from '../components/MenuModalities.vue';
+import TitleTextTwo from '../components/TitleTextTwo.vue';
 
 
 

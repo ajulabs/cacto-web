@@ -21,7 +21,7 @@ const handleMenuClick = () => {
             <div class="content">
                 <nav>
                     <div class="logo">
-                        <img src="@/assets/cacto_logo.svg" alt="Logo"/>
+                        <img src="../assets/cacto_logo.svg" alt="Logo"/>
                     </div>
                     <ul :class="{'ul': true, 'ul-open': isMenuopen }">
                         <li class="Home"><router-link to="/">Início</router-link></li>
