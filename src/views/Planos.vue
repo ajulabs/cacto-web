@@ -20,112 +20,130 @@ const selectCard = (cardId) => {
             <div class="contentPlan">
 
                 <div class="text">
-                    <h2>Titulo</h2>
-                    <p>eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit</p>
+                    <h2>Planos exclusivos para você que é único</h2>
+                    <p>Transforme seu corpo e mente com planos que se adptam ao seu estilo de vida.</p>
                 </div>
 
                 <div class="card">
-                    <div class="plaOne">
+                    <div class="plan">
                         <CardPlanos 
                             :class="{selected: selectedCard === 'planoX'}"
                             :is-selected="selectCard === 'planoX'"
-                                tipo="Plano X" 
+                                tipo="CACTO ESSENCIAL" 
                                 valor="R$XXX" 
-                                text="Por dolor sit amet"
+                                text="a partir de"
                                 @click="selectCard('planoX')">
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option1" class="round-checkbox" />
-                                <label for="option1">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 1
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option2" class="round-checkbox" />
-                                <label for="option2">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 2
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option3" class="round-checkbox" />
-                                <label for="option3">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 3
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option4" class="round-checkbox" />
-                                <label for="option4">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 4
-                                </label>
+                            <div class="card-content">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option1" class="round-checkbox" />
+                                    <label for="option1">
+                                        <h3 class="checkmark">
+                                            Acesso a todas as modalidades básicas.
+                                        </h3>
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option2" class="round-checkbox" />
+                                    <label for="option2">
+                                        <h3 class="checkmark">
+                                            Sessões semanais de acompanhamento com treinador.
+                                        </h3>
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option3" class="round-checkbox" />
+                                    <label for="option3">
+                                        <h3 class="checkmark">
+                                            Avaliação física trimestral.
+                                        </h3>
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option4" class="round-checkbox" />
+                                    <label for="option4">
+                                        <h3 class="checkmark check">
+                                            Flexibilidade de horários.
+                                        </h3>
+                                    </label>
+                                </div>
                             </div>
                         </CardPlanos>
                     </div>
 
-                    <div class="planTwo">
+                    <div class="plan">
                         <CardPlanos 
                             :class="{selected: selectedCard === 'planoY'}"
                             :is-selected="selectCard === 'planoY'"
-                                tipo="Plano Y" 
+                                tipo="CACTO PERFORMANCE" 
                                 valor="R$XXX" 
-                                text="Por dolor sit amet"
+                                text="a partir de"
                                 @click="selectCard('planoY')">
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option5" class="round-checkbox" />
-                                <label for="option5">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 5
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option6" class="round-checkbox" />
-                                <label for="option6">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 6
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option5" class="round-checkbox" />
-                                <label for="option5">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 5
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option6" class="round-checkbox" />
-                                <label for="option6">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 6
-                                </label>
+                            <div class="card-content">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option5" class="round-checkbox" />
+                                    <label for="option5">
+                                        <h3 class="checkmark">
+                                            Acesso a todas as modalidades básicas e exlcusivas.
+                                        </h3>
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option6" class="round-checkbox" />
+                                    <label for="option6">
+                                        <h3 class="checkmark">
+                                            Sessões de coaching personalizadas duas vezes por semana.
+                                        </h3>
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option5" class="round-checkbox" />
+                                    <label for="option5">
+                                        <h3 class="checkmark">Avaliação física e nutricional mensal.</h3>
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option6" class="round-checkbox" />
+                                    <label for="option6">
+                                        <h3 class="checkmark">Acesso a eventos exclusivos da academia.</h3>
+                                    </label>
+                                </div>
                             </div>
                         </CardPlanos>
                     </div>
 
-                    <div class="planThree">
+                    <div class="plan">
                         <CardPlanos 
                             :class="{selected: selectedCard === 'planoZ'}"
                             :is-selected="selectCard === 'planoZ'"
-                                tipo="Plano Z" 
+                                tipo="CACTO ELITE" 
                                 valor="R$XXX" 
-                                text="Por dolor sit amet"
+                                text="a partir de"
                                 @click="selectCard('planoZ')">
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option7" class="round-checkbox" />
-                                <label for="option7">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 7
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option8" class="round-checkbox" />
-                                <label for="option8">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 8
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option5" class="round-checkbox" />
-                                <label for="option5">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 5
-                                </label>
-                            </div>
-                            <div class="checkbox-container">
-                                <input type="checkbox" id="option6" class="round-checkbox" />
-                                <label for="option6">
-                                    <span class="checkmark"></span>eiusmod temporm dolor 6
-                                </label>
+                            <div class="card-content">
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option7" class="round-checkbox" />
+                                    <label for="option7">
+                                        <h3 class="checkmark">Acesso ilimitado a todas as modalidades.</h3> 
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option8" class="round-checkbox" />
+                                    <label for="option8">
+                                        <h3 class="checkmark">Avaliação física, nutricional e mental mensal.</h3> 
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option5" class="round-checkbox" />
+                                    <label for="option5">
+                                        <h3 class="checkmark">Consultoria de estilo de vida com especialistas.</h3> 
+                                    </label>
+                                </div>
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="option6" class="round-checkbox" />
+                                    <label for="option6">
+                                        <h3 class="checkmark">Sessões de coaching personalizadas ilimitadas.</h3> 
+                                    </label>
+                                </div>
                             </div>
                         </CardPlanos>
                     </div>
@@ -164,63 +182,96 @@ const selectCard = (cardId) => {
     margin: 4rem 0;
 }
 .text h2 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 2.5rem;
-    line-height: 4rem;
+    font-family: "PlusJakarta", sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
     text-align: center;
     color: #FFFFFF;
 }
 .text p {
+    width: 100%;
+    max-width: 849px;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    font-size: 1.2rem;
-    line-height: 2rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
     text-align: center;
     color: #FFFFFF;
+    opacity: 78%;
 }
 .card {
     width: 100%;
-    max-width: 1350px;
+    max-width: 1440px;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
-    gap: 2rem;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+.card-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 0 2rem;
 }
 .checkbox-container {
+    width: 100%;
+    max-width: 900px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-right: 5.2rem;
-    margin: 0.5rem; 
 }
 .checkbox-container label {
-    margin-left: 1rem;
+    margin: 1rem;
     color: #FFFFFF;
 }
+.checkmark {
+    width: 100%;
+    max-width: 321px;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.1rem;
+}
+
 .round-checkbox {
     appearance: none; 
-    width: 20px;
+    width: 100%;
     height: 20px;
-    background-color: #CCCCCC;
+    max-width: 20px;
+    background-color: #FFFFFF;
     border-radius: 50%;
     cursor: pointer; 
     outline: none;
     position: relative; 
     transition: border-color 0.3s;
 }
-.round-checkbox:checked {
+/* .round-checkbox:checked {
     background-color: #FF6400;
+} */
+
+@media (max-width: 1289px ) {
+    .card {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 851px ) {
+    .card {
+        grid-template-columns: repeat(1, auto);
+    }
 }
 
 @media (max-width: 809px ) {
-    .card {
-        grid-template-columns: repeat(2, auto);
-    }
     .text {
-        padding: 1rem;
+        max-width: 750px;
+        padding: 2rem;
         margin: 2rem 0;
+    }
+    .text p {
+        max-width: 700px;
     }
 }
 
@@ -241,7 +292,17 @@ const selectCard = (cardId) => {
         padding-top: 7rem;
     }
     .text {
-        padding: 1.5rem;
+        padding: 1.7rem;
+        font-size: 2rem;
+    }
+    .text h2 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .text p {
+        max-width: 380px;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
     }
 }
 

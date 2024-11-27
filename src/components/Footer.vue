@@ -18,17 +18,17 @@ import Line from './Line.vue';
                         <img src="/src/assets/cacto_logo.svg" alt="">
                     </div>
                     <div class="contacto-local">
-                        <h2> CACTO ALAMENDA </h2>
-                        <h3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </h3>
+                        <h2> CACTO FAROLÂNDIA </h2>
+                        <h3> R. Alferes José Pedro de Brito <br> Nº 1170 </h3>
                     </div>
                     <div class="contacto-local">
-                        <h2> CACTO 13 DE JULHO </h2>
-                        <h3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </h3>
+                        <h2> CACTO FAROL </h2>
+                        <h3> R. Leovegildo Martins Fontes <br> Nº 205 </h3>
                     </div>
                     <Line/>
                     <div class="contacto-local">
-                        <h2> CACTO 13 DE JULHO </h2>
-                        <h3> [endereço] Lorem ipsum dolar sit <br> amet, consectetur </h3>
+                        <h2> ATEM TRAINING CENTER </h2>
+                        <h3> Av. Gonçalo Rolemberg Leite <br> Nº 1465 </h3>
                     </div>
                     <Line/>
                 </div>
@@ -42,7 +42,7 @@ import Line from './Line.vue';
                             </div>
                             <div class="item-list">
                                 <h3> Nome e nome </h3>
-                                <h2> João Silva </h2>
+                                <h2> Filipe Cacto </h2>
                             </div>
                             <div class="item-list">
                                 <img src="/src/assets/Next slide.svg" alt="">
@@ -55,7 +55,7 @@ import Line from './Line.vue';
                             </div>
                             <div class="item-list">
                                 <h3> Telefone </h3>
-                                <h2> (79) XXXXX-XXXX </h2>
+                                <h2> (79) 99888-2399 </h2>
                             </div>
                         </div>
                         <Line/>
@@ -216,9 +216,9 @@ import Line from './Line.vue';
     margin: 4rem 0 8rem 0;
 }
 
-@media (max-width: 1165px) {
+@media (max-width: 1072px) {
     .footer-content {
-        padding: 0 4rem;
+        padding: 0;
     }
 }
 

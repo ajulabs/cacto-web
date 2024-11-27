@@ -24,4 +24,13 @@
     /* margin: 0; */
     opacity: 1%;
 }
+
+@media (max-width: 480px ) {
+    .Line-divisória {
+        transform: rotate(90deg);
+    }
+    .divisoria {
+        height: 1px;
+    }
+}
 </style>

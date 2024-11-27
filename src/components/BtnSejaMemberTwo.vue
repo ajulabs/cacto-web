@@ -24,8 +24,8 @@ const navigateToPage = () => {
 
 .text-content {
     width: 100%; 
-    max-width: 631px; 
-    height: 87px;
+    max-width: 211.5px; 
+    height: 65px;
 } 
 
 .join-button {
@@ -54,7 +54,7 @@ const navigateToPage = () => {
     background-color: #e65500;
 }
 
-@media (max-width: 1100px) {
+/* @media (max-width: 1100px) {
     .join-button{
         max-width: 230px;
         max-height: 80px;
@@ -81,11 +81,12 @@ const navigateToPage = () => {
         width: 20px;
         padding-top: .1rem;
     }
-}
+} */
 
-@media (max-width: 320px ) {
+@media (max-width: 480px ) {
     .text-content {
-        margin-left: 1rem;
+        margin-top: 1rem;
+        height: 40px;
     }
     .join-button {
         max-width: 80px;
@@ -97,6 +98,9 @@ const navigateToPage = () => {
         width: 20px;
         padding-top: .1rem;
         margin-left: 10px;
+    }
+    .join-button {
+        margin: 0 auto;
     }
 }
 </style>

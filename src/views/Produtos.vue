@@ -13,10 +13,12 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
         <div class="Produc-Section">
             <div class="text-container">
                 <div class="text-content">
-                    <span class="text-content-p"> <p> Lorem ipsum dolor </p></span>
+                    <div class="text-content-p">
+                        <p> Nossas modalidades </p>
+                    </div>
                     <TitleTextTwo
-                        title="Lorem Ipsun Dolor"
-                        description="eiusmod temporm dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporm dolor sit"
+                        title="Uma cacto só para você!"
+                        description="Evolua vivendo experiências únicas com nossos treinos personalizados."
                     />
                     <div class="btn">
                         <BtnSejaMemberTwo/>
@@ -30,9 +32,9 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
                     <h3>Texto</h3>
                 </div>
             <img src="/src/assets/imvitordiniz.png" alt="">
+            </div>
         </div>
 
-        </div>
         <div class="menu-container">
             <MenuModalities/>
             <div class="menu-content">
@@ -70,6 +72,10 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
 </template>
 
 <style scoped>
+.Production-Section-main {
+    margin: 0 2rem;
+    height: auto;
+}
 .Produc-Section {
     width: 100%;
     max-width: 1300px;
@@ -77,7 +83,6 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
     justify-content: center;
     align-items: center;
     height: 100vh;
-    padding-top: 4rem;
     margin: 0 auto;
 }
 .media-container {
@@ -85,7 +90,8 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
     z-index: 1;
 }
 .media-container img {
-    max-width: 100vw;
+    width: 100%;
+    max-width: 579px;
     object-fit: cover;
     max-height: 100vh;
 }
@@ -123,11 +129,33 @@ import TitleTextTwo from '@/components/TitleTextTwo.vue';
     color: #ff6400;
     font-size: 2.3rem;
     padding: 0 1rem;
-    font-weight: 100;
-    line-height: 6rem;
+    font-weight: 700;
+    line-height: 3.4rem;
 }
 .btn {
     padding-left: 1rem;
 }
+
+@media (max-width: 480px ) {
+    .Produc-Section {
+        /* height: auto; */
+        /* margin-top: 1rem; */
+        /* max-width: 480px; */
+        flex-direction: column;
+    }
+    .text-content-p p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2rem;
+    }
+    .media-container {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .media-container-txt {
+        top: 25rem;
+    }
+}
+
 
 </style>

@@ -43,69 +43,75 @@ const props=defineProps ({
 </template>
 
 <style scoped>
+
 .container-card {
-    width: 100%;
-    max-width: 250px;
+    max-width: 410px;
+    height: 500px;
     display: flex;
     align-items: center;
 }
 .contentCard {
-    width: 250px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    border-radius: 1rem;
+    padding: 2.5rem 0;
+    border-radius: 2.3rem;
     background-color: #171717;
     border: solid 0.96px rgba(255, 255, 255, 0.1)
 }
 .contentCard h2 {
-    font-family: 'poppins', sans-serif;
-    font-weight: 300;
-    font-size: 1rem;
-    line-height: 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.919rem;
+    line-height: 3rem;
     color: #FFFFFF;
 }
 .contentCard h1 {
-    font-family: 'poppins';
-    font-weight: 600;
-    font-size: 2.639rem;
-    line-height: 3.358rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 5.3rem;
+    padding: 1.5rem;
     color: #FFFFFF;
 }
 .contentCard p {
-    font-family: 'Poppins';
-    font-weight: 200;
-    font-size: .8rem;
-    line-height: 2rem;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
     color: #A0A3AA;
 }
 .LinDiv {
     border: 0;
-    height: 1px;
-    width: 96%;
-    background-color: #FFFFFF;
+    height: 10px;
+    width: 90%;
     margin: .7rem;
-    opacity: 40%;
+    border-top: 0.96px solid #E6E6E6
 }
 .btn button {
-    width: 11.379rem;
-    height: 2.879rem;
-    margin: 1.2rem;
-    padding: .6rem;
+    width: 100%;
+    max-width: 182.06px;
+    height: 46.06px;
+    margin: 1.2rem auto;
+    padding: 0 2rem;
     border: none;
     border-radius: 59.97rem;
     background-color: #FFFFFF;
     color: #171717;
-    font-family: 'Poppins';
-    font-size: .9rem;
-    line-height: 1.5rem;
-    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    text-align: center;
     cursor: pointer;
 }
 .selected {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 2.3rem;
     border: 0.96px solid transparent;
     background: linear-gradient(320deg, #FF6400, #FFD3B7);
     padding: 0.96px;
@@ -114,6 +120,12 @@ const props=defineProps ({
     background: linear-gradient(45deg, #FF6400, #FFD3B7);
     color: #FFFFFF;
     border: none;
+}
+
+@media (max-width: 480px ) {
+    .container-card {
+        height: auto;
+    }
 }
 
 </style>

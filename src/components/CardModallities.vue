@@ -17,15 +17,19 @@ const props = defineProps({
 <template>
     <div class="Main-CardModal">
         <div class="cardModal-container">
-            <div class="cardModal-content">
+            <div class="cardModal-content CardONe">
                 <div class="txt-Modal">
-                    <h1> {{ CardOne.title }} </h1>
-                    <p> {{ CardOne.description }} </p>
-                    <img :src="CardOne.iconSrc" alt="">
+                    <div class="TitleHOne">
+                        <h1> {{ CardOne.title }} </h1>
+                        <p> {{ CardOne.description }} </p>
+                    </div>
+                    <div class="arrow-reverse">
+                        <img :src="CardOne.iconSrc" alt="">
+                    </div>
                 </div>
-                <div class="img-Modal">
+                <div class="img-Modal LineOne">
                     <div class="lineVertical">
-                        <LineVertical/>
+                        <!-- <LineVertical/> -->
                     </div>
                     <div class="imgProps">
                         <img :src="CardOne.imageSrc" alt="">
@@ -35,21 +39,23 @@ const props = defineProps({
         </div>
 
         <div class="cardModal-container">
-            <div class="cardModal-content">
-                <div class="img-Modal">
+            <div class="cardModal-content CardTwo">
+                <div class="img-Modal LineTwo">
                     <div class="imgProps">
                         <img :src="CardTwo.imageSrc" alt="">
                     </div>
                     <div class="lineVertical">
-                        <LineVertical/>
+                        <!-- <LineVertical/> -->
                     </div>
                 </div>
                 <div class="txt-Modal">
-                    <h1> {{ CardTwo.title }} </h1>
-                    <p> {{ CardTwo.description }} </p>
-                    <span class="arrow-reverse">
+                    <div class="TitleHOne">
+                        <h1> {{ CardOne.title }} </h1>
+                        <p> {{ CardOne.description }} </p>
+                    </div>
+                    <div class="arrow-reverse">
                         <img :src="CardTwo.iconSrc" alt="">
-                    </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,6 +119,54 @@ const props = defineProps({
     border: none;
     cursor: pointer;
     margin-top: 3rem;
+}
+
+@media (max-width: 480px ) {
+    .cardModal-content {
+        max-width: 480px;
+    }
+    .CardTwo {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .LineOne {
+        flex-direction: column-reverse;
+    }
+    .LineTwo {
+        flex-direction: column;
+    }
+    .CardONe {
+        flex-direction: column;
+    }
+    .lineVertical {
+        padding: 0 1rem;
+        opacity: 7%;
+    }
+    .img-Modal {
+        align-items: center;
+    }
+    .txt-Modal {
+        width: 100%;
+        max-width: 480px;
+        gap: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    .arrow-reverse img {
+        width: 60px;
+        transform: rotate(90deg);
+    }
+    .imgProps {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .imgProps img {
+        width: 100%;
+    }
 }
 
 </style>

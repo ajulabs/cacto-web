@@ -112,6 +112,67 @@ import Button from './Button.vue';
     }
 }
 
+@media (max-width: 984px ) {
+    .card-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 943px ) {
+    .card-container {
+        padding: 1rem;
+    }
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .BG {
+        max-width: 85px;
+        height: 85px;
+    }
+    .card-content {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 879px ) {
+    .card-content {
+        margin-top: 2.5rem;
+    }
+    .title h1 {
+        line-height: 2rem;
+    }
+    .title p {
+        line-height: 2rem;
+    }
+    .card-container {
+        padding: .8rem;
+    }
+}
+
+@media (max-width: 874px ) {
+    .card-content {
+        margin-top: 2rem;
+    }
+}
+
+/* @media (max-width: 1066px ) {
+    .card-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1066px ) {
+    .card-container {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 1023px ) {
+    .card-container {
+        padding: 1.5rem;
+    }
+}
+
 @media (max-width: 808px ) {
     .card-container {
         padding: 1rem 2rem;
@@ -146,6 +207,13 @@ import Button from './Button.vue';
         margin-top: 1rem;
     }
 }
+
+@media (max-width: 450px ) {
+    .title h1 {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+} */
 
 @media (max-width: 405px) {
     .BTN-Footer {

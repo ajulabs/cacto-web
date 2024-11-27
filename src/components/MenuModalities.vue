@@ -55,4 +55,14 @@
     color: #FFFFFF;
 }
 
+@media (max-width: 480px ) {
+    .modal-content {
+        display: block;
+        text-align: center;
+    }
+    .itens {
+        margin: .5rem auto;
+    }
+}
+
 </style>

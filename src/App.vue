@@ -8,7 +8,7 @@ import { RouterView, RouterLink } from 'vue-router';
     <div>
         <Header/>
         <router-view></router-view>
-        <Footer/>
+        <!-- <Footer/> -->
     </div>
 </template>
 
