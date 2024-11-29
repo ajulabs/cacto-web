@@ -1,6 +1,8 @@
+import '@/app/ui/home.css'
+
 export default function Home() {
   return (
-    <div>
+    <div className="title">
         Home
     </div>
   );
