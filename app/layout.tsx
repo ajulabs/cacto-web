@@ -5,8 +5,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body id="body">
+        <p>Header</p>
         {children}
+        <p>Footer</p>
       </body>
     </html>
   );
