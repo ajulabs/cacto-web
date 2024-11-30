@@ -1,4 +1,5 @@
 import '@/app/ui/global.css'
+import Header from './header/header';
 
 export default function RootLayout({
   children,
@@ -8,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body id="body">
-        <p>Header</p>
+        <Header/>
         {children}
         <p>Footer</p>
       </body>
