@@ -1,5 +1,5 @@
 import '@/app/ui/global.css'
-import Header from './header/header';
+import Header from './ui/_components/header/header';
 
 export default function RootLayout({
   children,
