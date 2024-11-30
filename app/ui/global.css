@@ -25,3 +25,7 @@ html {
     font-size: 62.5%;
     background-color: var(--background-color);
 }
+
+.app-content {
+    margin-top: 7.8rem;
+}

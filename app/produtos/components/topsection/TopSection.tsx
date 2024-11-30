@@ -17,9 +17,7 @@ export default function TopSection(
                     <BeMember onClick={onBeMemberClick} />
                 </div>
             </div>
-            <div className="top-section-right">
-                <Image className="top-section-image" src={products_01} alt={""} fill={false} />
-            </div>
+            <Image className="top-section-image" src={products_01} alt={""} fill={false} />
         </div>
     )
 }

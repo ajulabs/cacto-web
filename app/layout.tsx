@@ -10,7 +10,9 @@ export default function RootLayout({
     <html lang="en">
       <body id="body">
         <Header/>
-        {children}
+        <div className='app-content'>
+          {children}  
+        </div>
         <p>Footer</p>
       </body>
     </html>
