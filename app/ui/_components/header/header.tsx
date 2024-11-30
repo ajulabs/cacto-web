@@ -6,6 +6,7 @@ import logo from '../../public/assets/logo.svg';
 import { useState } from 'react';
 import menu from '../../public/assets/menu.svg';
 import close from '../../public/assets/close.svg';
+import Link from 'next/link';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +23,11 @@ export default function Header() {
                         <Image src={logo} alt="Logo" />
                     </div>
                     <ul id='menu'>
-                        <li>Início</li>
-                        <li>Produtos</li>
-                        <li>Benefícios</li>
-                        <li>Atendimento Especializado</li>
-                        <li>Planos</li>
+                        <li><Link href={'/'} >Início</Link></li>
+                        <li><Link href={'/produtos'}>Produtos</Link></li>
+                        <li><Link href={'/beneficios'}>Benefícios</Link></li>
+                        <li><Link href={'/atendimento'}>Atendimento Especializado</Link></li>
+                        <li><Link href={'/planos'}>Planos</Link></li>
                     </ul>
                     <div className="menu-ic" id="btn-mobile" onClick={toggleMenu}>
                         <Image 
